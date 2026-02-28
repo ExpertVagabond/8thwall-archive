@@ -1,0 +1,931 @@
+{
+  "entrySpaceId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+  "objects": {
+    "220ace3c-5dca-4867-a3f0-2ac728df9d30": {
+      "components": {
+        "098a2ec2-c6d3-47bc-8f67-c23c6e8804cf": {
+          "id": "098a2ec2-c6d3-47bc-8f67-c23c6e8804cf",
+          "name": "location-anchor",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "220ace3c-5dca-4867-a3f0-2ac728df9d30",
+      "location": {
+        "anchorNodeId": "5424B15C125949818151F99752D1E8A1",
+        "anchorPayload": "ChUIk9COmL7o+qR0EIWx+PbCjou11wEY6pCPp9GqiQMqKAoWCNTIxOWlotakgQEQgaPlv6mqtPShARIJCgASBSUAAIA/HQAAgD8yGQoFJQAAgD8RAAAAoP22QkAZAAAAwDCJXsA=",
+        "anchorSpaceId": "7FF3C3B80B144BFCBA7B796009C7F572",
+        "imageUrl": "https://lh3.googleusercontent.com/aN4o8tXc-YRCyesqU5p_MiMqEaOK9z60OR7Pot1ASF5IP2KcYMiTTlaccefGfwyhoNAHQ9Lnq1Z7xrD_iuqRDEVHCQ7Otw3rbiqzfFPang",
+        "lat": 37.429632999999995,
+        "lng": -122.14357,
+        "name": "california-p-4a18",
+        "poiId": "4a18141f761735ccab53505d8d001340.16",
+        "title": "California Park Sign"
+      },
+      "material": null,
+      "name": "California Park Sign",
+      "order": 3.346336949651409,
+      "parentId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
+      "components": {},
+      "geometry": null,
+      "id": "47699d9e-18a5-4f88-a4f9-b8be92e8f74a",
+      "light": {
+        "type": "ambient"
+      },
+      "material": null,
+      "name": "Ambient Light",
+      "order": 0.34633694965140926,
+      "parentId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "4ecc631c-5637-48d9-8627-5c6dc249503a": {
+      "components": {},
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/mesh.glb"
+        }
+      },
+      "hidden": false,
+      "id": "4ecc631c-5637-48d9-8627-5c6dc249503a",
+      "material": {
+        "type": "hider"
+      },
+      "name": "hider-mesh",
+      "parentId": "220ace3c-5dca-4867-a3f0-2ac728df9d30",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "7732ff22-2cb7-44af-ac59-4af458f526e0": {
+      "components": {},
+      "gltfModel": {
+        "animationClip": "*",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/animated-model.glb"
+        }
+      },
+      "id": "7732ff22-2cb7-44af-ac59-4af458f526e0",
+      "name": "animated-model",
+      "order": 2.579617695112203,
+      "parentId": "220ace3c-5dca-4867-a3f0-2ac728df9d30",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "a608ddd9-9379-464d-966f-5d8d8674c83c": {
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "AR",
+          "phone": "AR",
+          "world": {
+            "enableVps": true
+          }
+        }
+      },
+      "components": {},
+      "geometry": null,
+      "id": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "material": null,
+      "name": "Camera",
+      "order": 3.025388659824752,
+      "parentId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "position": [
+        1.6727950034148567,
+        1.5494421338197388,
+        6.820029855918676
+      ],
+      "rotation": [
+        -1.8412919444518387e-17,
+        0.9537169517857893,
+        -0.30070579621354565,
+        -5.839832572618051e-17
+      ],
+      "scale": [
+        0.9999998646558023,
+        0.9999999931513284,
+        0.9999998715044741
+      ]
+    },
+    "ac1989e3-3b71-49e2-a05f-e682aeb18c36": {
+      "components": {},
+      "geometry": null,
+      "id": "ac1989e3-3b71-49e2-a05f-e682aeb18c36",
+      "light": {
+        "intensity": 1,
+        "shadowBias": 0,
+        "type": "directional"
+      },
+      "material": null,
+      "name": "Directional Light",
+      "order": 2.346336949651409,
+      "parentId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "position": [
+        20,
+        20,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "15814b2f-f42a-4cbb-9cf5-8f8fd2547225": {
+      "id": "15814b2f-f42a-4cbb-9cf5-8f8fd2547225",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Directional Light",
+      "order": 0.2508227635481788
+    },
+    "f19b7cb6-8bc8-4434-846b-36ae470c9b26": {
+      "id": "f19b7cb6-8bc8-4434-846b-36ae470c9b26",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "components": {},
+      "light": {
+        "type": "ambient"
+      },
+      "name": "Ambient Light",
+      "order": 1.7299498578201646
+    },
+    "0521b440-017a-44be-b581-6d3a24e38c7b": {
+      "id": "0521b440-017a-44be-b581-6d3a24e38c7b",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "components": {},
+      "name": "Camera",
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "xrCameraType": "world",
+          "phone": "AR",
+          "desktop": "disabled",
+          "headset": "disabled",
+          "world": {
+            "enableVps": true
+          }
+        }
+      },
+      "order": 2.817065855377811
+    },
+    "aec14008-8a2e-44f2-a3a4-92ed61e3b926": {
+      "id": "aec14008-8a2e-44f2-a3a4-92ed61e3b926",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "components": {
+        "3879aded-0049-493a-a17c-5e145cff1db6": {
+          "id": "3879aded-0049-493a-a17c-5e145cff1db6",
+          "name": "location-anchor",
+          "parameters": {}
+        },
+        "3531752a-79d9-41f4-9760-84fa807eb8de": {
+          "id": "3531752a-79d9-41f4-9760-84fa807eb8de",
+          "name": "Colorful Shader",
+          "parameters": {}
+        }
+      },
+      "name": "California Avenue Fountain",
+      "location": {
+        "name": "california-a-7877",
+        "poiId": "7877f2cd7503498ab7cf4a46d40c1532.16",
+        "lat": 37.428995,
+        "lng": -122.142552,
+        "title": "California Avenue Fountain",
+        "anchorNodeId": "F387E0429D334D989DB7139AFC12BF72",
+        "anchorSpaceId": "A6C9C8BE53DB4866B031C8CABEE37061",
+        "imageUrl": "https://lh3.googleusercontent.com/yynv7GEYoNKcYa7U-Cfcw8TU9Xqnyv23UpfViigNzTfOqIZ1sj6PxqiVC7mYR1eTJSPCTU2Y5h-BKGBNL9WdwdVWbRPTNS0WuFjSbORHwl3N",
+        "anchorPayload": "ChQItvyp98PogaFWEJqZ1Pv21sz4Kxj3mZWRozIqJwoVCPOPgpfU88ymmAEQne/O0MnfxN9yEgkKABIFJQAAgD8dAACAPzISERmNCsbqtkJAGfsljFUfiV7A",
+        "visualization": "mesh"
+      },
+      "order": 4.0497255510206704
+    },
+    "a0fbf9c0-3b90-4b32-b667-55ace536987c": {
+      "id": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "position": [
+        0,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "ae503c31-edab-4c08-8db6-b0a31dff83ae": {
+          "id": "ae503c31-edab-4c08-8db6-b0a31dff83ae",
+          "name": "options-toggle",
+          "parameters": {
+            "selectorButton": {
+              "type": "entity",
+              "id": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7"
+            },
+            "options": {
+              "type": "entity",
+              "id": "b280d8f8-fd44-41b7-8d42-6fc6242cda39"
+            }
+          }
+        },
+        "1b7e28d5-3787-4a01-a9cd-8712cc181735": {
+          "id": "1b7e28d5-3787-4a01-a9cd-8712cc181735",
+          "name": "space-selector",
+          "parameters": {
+            "space1": "Bespoke",
+            "space2": "Procedural",
+            "space3": "Magic Photos",
+            "space4": "Toggle SLAM",
+            "option1": {
+              "type": "entity",
+              "id": "4b478aba-98a3-414d-af72-e3a114bd995c"
+            },
+            "option2": {
+              "type": "entity",
+              "id": "db284086-853f-4992-bd45-a8c1e6170253"
+            },
+            "option3": {
+              "type": "entity",
+              "id": "6d146568-a215-4560-af69-999907c67441"
+            },
+            "option4": {
+              "type": "entity",
+              "id": "c92928cf-f4dc-46dc-943f-f28769137cea"
+            },
+            "activeSpaceName": {
+              "type": "entity",
+              "id": "32ba032d-ce16-445d-8e91-1780bfed5405"
+            },
+            "option1Name": {
+              "type": "entity",
+              "id": "130615c8-06f0-4f66-8c79-0fb02d25140f"
+            },
+            "option2Name": {
+              "type": "entity",
+              "id": "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4"
+            },
+            "option3Name": {
+              "type": "entity",
+              "id": "aedc2454-960d-4b39-bd9d-c840a86e6a39"
+            },
+            "option4Name": {
+              "type": "entity",
+              "id": "a80f97d6-5af0-4569-aa9e-d535d2e85ca9"
+            },
+            "option1Icon": {
+              "type": "entity",
+              "id": "d890302c-cd03-4051-9488-ed1b8f89e25c"
+            },
+            "option2Icon": {
+              "type": "entity",
+              "id": "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4"
+            },
+            "option3Icon": {
+              "type": "entity",
+              "id": "b00e7e1d-ff22-4c24-8c7c-a1a8892ebbdb"
+            },
+            "option4Icon": {
+              "type": "entity",
+              "id": "2cb424db-939d-41d9-b7d1-56c8ac962f4e"
+            }
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 160,
+        "height": 109,
+        "type": "overlay",
+        "gap": 4,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "position": "absolute",
+        "top": 20,
+        "left": 20,
+        "bottom": "",
+        "right": "",
+        "alignItems": "flex-start",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap"
+      },
+      "name": "Space Selector",
+      "hidden": false,
+      "order": 0,
+      "parentId": "293403b9-21cb-43ee-b3a8-eb4a80cad6e1"
+    },
+    "f5a9b81f-ac84-43f0-bb27-43ff090f76e7": {
+      "id": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "position": [
+        0,
+        -1.8068924473905623,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "components": {},
+      "ui": {
+        "borderColor": "#464766",
+        "borderWidth": 1,
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "background": "#1c1d2a",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Selector Button",
+      "order": 1,
+      "hidden": false
+    },
+    "32ba032d-ce16-445d-8e91-1780bfed5405": {
+      "id": "32ba032d-ce16-445d-8e91-1780bfed5405",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "components": {},
+      "name": "Active Space Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Active Space",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 2
+    },
+    "dee54314-0b39-464e-b0ed-92a133847d28": {
+      "id": "dee54314-0b39-464e-b0ed-92a133847d28",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/chevron.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Dropdown Icon",
+      "order": 3,
+      "hidden": false
+    },
+    "b280d8f8-fd44-41b7-8d42-6fc6242cda39": {
+      "id": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "position": [
+        0,
+        -1.8068924473905623,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "components": {},
+      "ui": {
+        "borderColor": "#464766",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": "100%",
+        "height": 75,
+        "type": "3d",
+        "background": "#0f0e1a",
+        "backgroundOpacity": 1,
+        "borderRadius": 10,
+        "gap": 0
+      },
+      "name": "Selector Options",
+      "order": 4,
+      "hidden": false
+    },
+    "4b478aba-98a3-414d-af72-e3a114bd995c": {
+      "id": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 1",
+      "order": 5
+    },
+    "130615c8-06f0-4f66-8c79-0fb02d25140f": {
+      "id": "130615c8-06f0-4f66-8c79-0fb02d25140f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "components": {},
+      "name": "Option 1 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 1",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 6
+    },
+    "d890302c-cd03-4051-9488-ed1b8f89e25c": {
+      "id": "d890302c-cd03-4051-9488-ed1b8f89e25c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 1 Icon",
+      "order": 7,
+      "hidden": true
+    },
+    "db284086-853f-4992-bd45-a8c1e6170253": {
+      "id": "db284086-853f-4992-bd45-a8c1e6170253",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 2",
+      "order": 8
+    },
+    "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4": {
+      "id": "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "db284086-853f-4992-bd45-a8c1e6170253",
+      "components": {},
+      "name": "Option 2 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 2",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 9
+    },
+    "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4": {
+      "id": "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 2 Icon",
+      "order": 10,
+      "parentId": "db284086-853f-4992-bd45-a8c1e6170253",
+      "hidden": true
+    },
+    "7c139978-98bd-481a-b3b8-06d8731aabea": {
+      "id": "7c139978-98bd-481a-b3b8-06d8731aabea",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "components": {
+        "cebfdd2a-ced8-4914-84d0-bfb820320762": {
+          "id": "cebfdd2a-ced8-4914-84d0-bfb820320762",
+          "name": "loading",
+          "parameters": {}
+        }
+      },
+      "name": "Loading",
+      "order": -1.317335006382859
+    },
+    "07aaddd6-bd1c-4bfa-bb69-5c7125106e73": {
+      "id": "07aaddd6-bd1c-4bfa-bb69-5c7125106e73",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "components": {
+        "63076c96-eb2d-471e-880c-f1b3b4f206da": {
+          "id": "63076c96-eb2d-471e-880c-f1b3b4f206da",
+          "name": "loading",
+          "parameters": {}
+        }
+      },
+      "name": "Loading",
+      "order": -2.5302698603915452
+    }
+  },
+  "spaces": {
+    "e4bde5d1-83f0-489f-bc23-f322a3163af2": {
+      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "id": "e4bde5d1-83f0-489f-bc23-f322a3163af2",
+      "name": "Bespoke",
+      "reflections": {
+        "type": "url",
+        "url": "https://cdn.8thwall.com/web/assets/envmap/hilly_terrain_01_1k-m89fuwlx.hdr"
+      },
+      "includedSpaces": [
+        "293403b9-21cb-43ee-b3a8-eb4a80cad6e1"
+      ]
+    },
+    "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e": {
+      "id": "079722ba-a8a6-4a7b-9ea0-4b1af9c70b9e",
+      "name": "Procedural",
+      "activeCamera": "0521b440-017a-44be-b581-6d3a24e38c7b",
+      "includedSpaces": [
+        "293403b9-21cb-43ee-b3a8-eb4a80cad6e1"
+      ]
+    },
+    "293403b9-21cb-43ee-b3a8-eb4a80cad6e1": {
+      "id": "293403b9-21cb-43ee-b3a8-eb4a80cad6e1",
+      "name": "Space Selector",
+      "activeCamera": "82d2ad0d-7650-4abd-bc37-ebc23597f9f1"
+    }
+  },
+  "runtimeVersion": {
+    "type": "version",
+    "level": "major",
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  },
+  "historyVersion": "mm5os0n2"
+}

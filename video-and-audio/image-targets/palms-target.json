@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/palms-target_luminance.png",
+  "resources": {
+    "originalImage": "palms-target_original.png",
+    "croppedImage": "palms-target_cropped.png",
+    "thumbnailImage": "palms-target_thumbnail.png",
+    "geometryImage": "palms-target_geometry.png",
+    "luminanceImage": "palms-target_luminance.png"
+  },
+  "name": "palms-target",
+  "type": "PLANAR",
+  "properties": {
+    "top": 239,
+    "left": 0,
+    "width": 1080,
+    "height": 1440,
+    "isRotated": true,
+    "originalWidth": 1080,
+    "originalHeight": 1920
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1750269598348,
+  "updated": 1755539991495
+}

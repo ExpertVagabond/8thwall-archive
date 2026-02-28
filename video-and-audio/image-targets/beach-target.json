@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/beach-target_luminance.png",
+  "resources": {
+    "originalImage": "beach-target_original.png",
+    "croppedImage": "beach-target_cropped.png",
+    "thumbnailImage": "beach-target_thumbnail.png",
+    "geometryImage": "beach-target_geometry.png",
+    "luminanceImage": "beach-target_luminance.png"
+  },
+  "name": "beach-target",
+  "type": "PLANAR",
+  "properties": {
+    "top": 90,
+    "left": 0,
+    "width": 1080,
+    "height": 1440,
+    "isRotated": true,
+    "originalWidth": 1080,
+    "originalHeight": 1620
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1750269568494,
+  "updated": 1750269568494
+}

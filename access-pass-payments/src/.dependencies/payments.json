@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "dependencyId": "99d16333-31b6-4aca-bcc2-f96bcb041038",
+  "moduleId": "d1b1a397-16bf-4265-8235-1350ea721ac5",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZXAiLCJpYXQiOjE2NTI5ODEzMzkuNDg2LCJ2ZXJzaW9uIjoxLCJhY2Nlc3NMZXZlbCI6Im93bmVkIiwibW9kdWxlSWQiOiJkMWIxYTM5Ny0xNmJmLTQyNjUtODIzNS0xMzUwZWE3MjFhYzUiLCJhcHBVdWlkIjoiM2ZkNWNhM2QtZTZlNy00MzVmLWIyN2EtMGM0NTJlMDkzOGY1IiwiYWNjb3VudFV1aWQiOiI1Zjg1Mzc3OS1hOTFkLTRjNzEtYjkwYi0xM2QzZjExNGZhODUifQ.M6Yzizg-a1jAv3WE4bbxWaN1I-5sZ3VkJ3mPpzwcwB0",
+  "alias": "payments",
+  "target": {
+    "type": "version",
+    "level": "minor",
+    "major": 1,
+    "minor": 1,
+    "patch": 0
+  },
+  "config": {
+    "testMode": true,
+    "accessDurationDays": 1,
+    "amount": 9.99,
+    "name": "1-Day Access Pass",
+    "clearPurchasesOnRun": true,
+    "currency": "usd",
+    "language": "en-US"
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Access Pass - Payments</title>
+  <meta itemprop="name" content="Access Pass - Payments">
+  <meta name="twitter:title" content="Access Pass - Payments">
+  <meta property="og:title" content="Access Pass - Payments">
+  <meta property="og:site_name" content="Access Pass - Payments">
+  <meta name="description" content="An example of how to add an access pass product for users to purchase within your project. Test Mode is enabled so you can simulate the purchase flow.">
+  <meta itemprop="description" content="An example of how to add an access pass product for users to purchase within your project. Test Mode is enabled so you can simulate the purchase flow.">
+  <meta property="og:description" content="An example of how to add an access pass product for users to purchase within your project. Test Mode is enabled so you can simulate the purchase flow.">
+  <meta name="twitter:description" content="An example of how to add an access pass product for users to purchase within your project. Test Mode is enabled so you can simulate the purchase flow.">
+  <script crossorigin="anonymous" src="./external/scripts/8frame-1.2.0.min.js"></script>
+  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
+  <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam">
+  </script>
+
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
+
+<!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
+<meta name="8thwall:renderer" content="aframe:1.2.0"/>
+<meta name="8thwall:package" content="@8thwall.xrextras"/>
+<meta name="8thwall:package" content="@8thwall.landing-page"/>
+<meta name="google" content="notranslate"/>
+
+<!-- Arcturus Holostream Player -->
+<script crossorigin="anonymous" src="https://static.holostream.arcturus.studio/release/2021.1.5/remote/HoloStream-2021.1.5.min.js"></script>
+
+</head>
+
+<body>
+<script src="bundle.js"></script>
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+<div class="over">
+  <span id="promptText"></span>
+  <img id="pauseBtn" class="media-btn" src="./assets/icons/pause.svg" style="display: none;">
+  <img id="muteBtn" class="media-btn" src="./assets/icons/sound.svg" style="display: none;">
+  <div id="gradient-box"></div>
+</div>
+
+<a-scene
+  xrextras-gesture-detector
+  xrextras-loading
+  xrextras-runtime-error
+  access-pass
+  renderer="antialias: true; colorManagement: true; physicallyCorrectLights: true;"
+  xrweb="allowedDevices: any">
+
+  <xrextras-resource id="logo" src="./assets/icons/arcturus-logo.png"></xrextras-resource>
+  
+  <a-camera
+    id="camera"
+    position="0 2 3"
+    raycaster="objects: .cantap"
+    cursor="fuse: false; rayOrigin: mouse;">
+  </a-camera>
+    
+  <a-entity
+    light="
+      type: directional;
+      intensity: 0.8;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraTop: 10;
+      target: #holo;"
+    xrextras-attach="target: holo; offset: 0 15 0;"
+    shadow>
+  </a-entity>
+ 
+  <holostream-hologram
+    id="holo"
+    touch-target-size='1.65 1.75'
+    src="https://api-ap.holostream.arcturus.studio/media/3a5f6f85-acaf-41fc-9078-b1967f0349d0/stream/dash/manifest.mpd"
+    xrextras-hold-drag="riseHeight: 0.4"
+    xrextras-two-finger-rotate
+    xrextras-pinch-scale>
+  </holostream-hologram>
+  
+  <a-entity
+    id="ground"
+    class="cantap"
+    geometry="primitive: box"
+    material="shader: shadow; transparent: true; opacity: 0.4"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    shadow="cast: false">
+  </a-entity>
+</a-scene>
+
+
+</body>
+
+</html>

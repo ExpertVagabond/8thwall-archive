@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencyId": "b821c7ae-f3f3-41dd-ac00-d62ce7cbe33e",
+  "moduleId": "ff29e086-d7d8-4892-8fdf-62f67369709a",
+  "alias": "landing-page-studio",
+  "target": {
+    "type": "version",
+    "level": "major",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

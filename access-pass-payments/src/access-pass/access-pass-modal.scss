@@ -1,0 +1,147 @@
+$desktop-pixel-breakpoint: 1000px;
+$device-height-breakpoint: 700px;
+
+.modal-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  background-color: #1C1D2A;
+  z-index: 10000;
+  justify-content: center;
+
+
+  .preview-mobile {
+    width: 100%;
+    display: none;
+  }
+
+  .preview-desktop {
+    width: 100%;
+    max-width: 1140px;
+  }
+
+
+  @media (max-width: $desktop-pixel-breakpoint) {
+    .preview-mobile {
+      display: block;
+    }
+
+    .preview-desktop {
+      display: none;
+    }
+  }
+
+  .modal-content-container {
+    position: absolute;
+    width: inherit;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(28, 29, 42, 0) 1.76%, #1C1D2A 38.97%);
+
+    @media (min-height: $device-height-breakpoint) and (min-width: $desktop-pixel-breakpoint) {
+      padding-top: 25vh;
+    }
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Nunito';
+      text-align: center;
+      color: #ffffff;
+      max-width: 500px;
+      margin: auto;
+      padding: 0 1em;
+
+      .title {
+        font-size: 2em;
+        margin-top: 0.67em;
+      }
+
+      .subtitle {
+        font-style: italic;
+        margin-bottom: 1em;
+      }
+
+      .pricing-text {
+        font-size: 14px;
+        color: #FFC828;
+        margin-top: 1em;
+      }
+
+      .credit-row {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 0.3em;
+        font-weight: 600;
+        font-style: italic;
+        color: #B5B8D0;
+        font-size: 12px;
+      }
+
+      .logos-container {
+        display: flex;
+        align-items: baseline;
+        gap: 1.5em;
+        justify-content: space-evenly;
+        margin-top: 3em;
+        margin-bottom: 2em;
+
+        .arcturus-logo {
+          height: 78px;
+        }
+
+        .crescent-logo {
+          height: 56px;
+        }
+      }
+
+      button {
+        font-size: 14px;
+        background-color: #AD50FF;
+        border: none;
+        color: #fff;
+        padding: 0.78em 4em 0.78em;
+        border-radius: 0.5em;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #6908a7;
+        }
+      }
+
+      .the8thwall-logo {
+        width: 167px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        @media(min-height: $device-height-breakpoint) {
+          margin-bottom: 10vh;
+        }
+      }
+
+      .error-container {
+        display: flex;
+        margin-top: 1em;
+        padding: 0.5em;
+        line-height: 1.1em;
+        color: #dd0065;
+        background: #dd006505;
+        border: 1px solid #dd0065;
+
+        .error-message {
+          padding-left: 0.5em;
+          flex: 1;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+
+

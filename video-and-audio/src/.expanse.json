@@ -1,0 +1,1871 @@
+{
+  "entrySpaceId": "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6",
+  "objects": {
+    "f28767ea-4df9-4058-96e5-65f71ac248c7": {
+      "components": {
+        "4a48b8ad-d61d-4537-b8eb-142e7474b0b3": {
+          "id": "4a48b8ad-d61d-4537-b8eb-142e7474b0b3",
+          "name": "Video Controls UI",
+          "parameters": {
+            "background": {
+              "type": "entity",
+              "id": "faa0c579-2947-43c2-b465-4720ec93ff06"
+            },
+            "playbackImage": {
+              "type": "entity",
+              "id": "f542be23-cd7d-44e6-92f1-c183d6fad46b"
+            }
+          }
+        }
+      },
+      "geometry": {
+        "height": 9,
+        "type": "plane",
+        "width": 16
+      },
+      "id": "f28767ea-4df9-4058-96e5-65f71ac248c7",
+      "material": {
+        "color": "#fcfcfc",
+        "side": "front",
+        "type": "basic",
+        "wireframe": false,
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/videos/beach.mp4"
+        },
+        "roughness": 1
+      },
+      "name": "Video Surface",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.20000000000000004,
+        0.20000000000000004,
+        0.20000000000000004
+      ],
+      "videoControls": {
+        "paused": true,
+        "loop": true,
+        "volume": 1,
+        "positional": false
+      },
+      "order": 5.5219435267847405,
+      "shadow": {
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "prefab": true
+    },
+    "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
+      "components": {},
+      "geometry": null,
+      "id": "47699d9e-18a5-4f88-a4f9-b8be92e8f74a",
+      "light": {
+        "type": "ambient"
+      },
+      "material": null,
+      "name": "Ambient Light",
+      "order": 0.61102012305484,
+      "parentId": "8798a62f-a986-4b73-9752-ca156daf1761",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "a608ddd9-9379-464d-966f-5d8d8674c83c": {
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "desktop": "3D",
+          "xrCameraType": "3dOnly",
+          "headset": "disabled",
+          "phone": "3D",
+          "world": {
+            "scale": "responsive"
+          }
+        }
+      },
+      "components": {
+        "a56f74a0-ceb6-41a6-881c-51ebe7940713": {
+          "id": "a56f74a0-ceb6-41a6-881c-51ebe7940713",
+          "name": "orbit-controls",
+          "parameters": {
+            "focusEntity": {
+              "type": "entity",
+              "id": "3cee80f0-c290-4744-b93a-dfcdf615b87e"
+            },
+            "invertedY": true,
+            "distanceMin": 20
+          }
+        }
+      },
+      "geometry": null,
+      "id": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "material": null,
+      "name": "Camera",
+      "order": 1.337384800802143,
+      "parentId": "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6",
+      "position": [
+        0,
+        5,
+        10
+      ],
+      "rotation": [
+        0,
+        -1,
+        0,
+        6.123233995736766e-17
+      ],
+      "scale": [
+        0.9999998646558023,
+        0.9999999931513284,
+        0.9999998715044741
+      ]
+    },
+    "ac1989e3-3b71-49e2-a05f-e682aeb18c36": {
+      "components": {},
+      "geometry": null,
+      "id": "ac1989e3-3b71-49e2-a05f-e682aeb18c36",
+      "light": {
+        "intensity": 1,
+        "type": "directional"
+      },
+      "material": null,
+      "name": "Directional Light",
+      "order": 2.128887474344138,
+      "parentId": "8798a62f-a986-4b73-9752-ca156daf1761",
+      "position": [
+        20,
+        20,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "dd06ca03-851d-4e4d-b4ac-5d8c1795ae14": {
+      "components": {},
+      "geometry": {
+        "height": 50,
+        "type": "plane",
+        "width": 50
+      },
+      "id": "dd06ca03-851d-4e4d-b4ac-5d8c1795ae14",
+      "material": {
+        "color": "#000000",
+        "opacity": 0.3,
+        "type": "shadow"
+      },
+      "name": "Ground",
+      "order": 3.1717102420134102,
+      "parentId": "8798a62f-a986-4b73-9752-ca156daf1761",
+      "position": [
+        0,
+        0,
+        -1.2040103510545865
+      ],
+      "rotation": [
+        -0.707106799999999,
+        0,
+        0,
+        0.7071067623730954
+      ],
+      "scale": [
+        1,
+        1.0000000532124818,
+        1.0000000532124818
+      ],
+      "shadow": {
+        "receiveShadow": true
+      },
+      "hidden": false
+    },
+    "8798a62f-a986-4b73-9752-ca156daf1761": {
+      "id": "8798a62f-a986-4b73-9752-ca156daf1761",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6",
+      "components": {},
+      "name": "Environment",
+      "order": 0.33738480080214284
+    },
+    "faa0c579-2947-43c2-b465-4720ec93ff06": {
+      "id": "faa0c579-2947-43c2-b465-4720ec93ff06",
+      "position": [
+        0,
+        0,
+        0.001
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.0000000000000004,
+        1.0000000000000004,
+        1.0000000000000004
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f28767ea-4df9-4058-96e5-65f71ac248c7",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": 1600,
+        "height": 900,
+        "type": "3d",
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Background"
+    },
+    "f542be23-cd7d-44e6-92f1-c183d6fad46b": {
+      "id": "f542be23-cd7d-44e6-92f1-c183d6fad46b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "faa0c579-2947-43c2-b465-4720ec93ff06",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 256,
+        "height": 256,
+        "image": {
+          "type": "asset",
+          "asset": "assets/icons/pause-button.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Image"
+    },
+    "3cee80f0-c290-4744-b93a-dfcdf615b87e": {
+      "id": "3cee80f0-c290-4744-b93a-dfcdf615b87e",
+      "position": [
+        0,
+        6.505149567422645,
+        -9.903123886697902
+      ],
+      "name": "Video",
+      "instanceData": {
+        "instanceOf": "f28767ea-4df9-4058-96e5-65f71ac248c7",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6",
+      "components": {},
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "material": {
+        "color": "#fcfcfc",
+        "side": "front",
+        "type": "basic",
+        "wireframe": false,
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/videos/palms.mp4"
+        },
+        "roughness": 1
+      },
+      "order": 1.0212332726915234
+    },
+    "fd01c9cf-fe30-47b0-bf9f-1a92d9f24e89": {
+      "id": "fd01c9cf-fe30-47b0-bf9f-1a92d9f24e89",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7e61de80-da5e-4e13-91b8-652499a9fbf2",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Directional Light",
+      "order": 0.6507316111657433
+    },
+    "9b8d5272-1d56-4ee7-99bd-7885c2636e70": {
+      "id": "9b8d5272-1d56-4ee7-99bd-7885c2636e70",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7e61de80-da5e-4e13-91b8-652499a9fbf2",
+      "components": {},
+      "light": {
+        "type": "ambient"
+      },
+      "name": "Ambient Light",
+      "order": 2.3014632223314866
+    },
+    "4a6717eb-56ce-45ec-80fd-6f0cabf45881": {
+      "id": "4a6717eb-56ce-45ec-80fd-6f0cabf45881",
+      "position": [
+        0,
+        5,
+        7
+      ],
+      "rotation": [
+        4.27135053440047e-18,
+        0.9975640500191355,
+        0.06975647718614376,
+        -6.108318598061124e-17
+      ],
+      "scale": [
+        0.9999998646558023,
+        0.9999999931513284,
+        0.9999998715044741
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dda7c5ad-379d-4e76-becd-47214d7ee511",
+      "components": {},
+      "name": "Camera",
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "xrCameraType": "world",
+          "phone": "AR",
+          "desktop": "3D",
+          "headset": "AR"
+        }
+      },
+      "order": 0.8322236698160121
+    },
+    "0dc1c37f-fd42-41ae-9c5d-0355dce41edf": {
+      "id": "0dc1c37f-fd42-41ae-9c5d-0355dce41edf",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dda7c5ad-379d-4e76-becd-47214d7ee511",
+      "components": {},
+      "name": "Palms",
+      "imageTarget": {
+        "name": "palms-target"
+      },
+      "order": -0.15234989288151746
+    },
+    "7e61de80-da5e-4e13-91b8-652499a9fbf2": {
+      "id": "7e61de80-da5e-4e13-91b8-652499a9fbf2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dda7c5ad-379d-4e76-becd-47214d7ee511",
+      "components": {},
+      "name": "Environment",
+      "order": -1.8322236698160121
+    },
+    "a605d0b1-964b-42a7-8c17-4cb2b7b6d89a": {
+      "components": {
+        "3dd9dc04-ebcd-4611-9f21-8a24bb80225b": {
+          "id": "3dd9dc04-ebcd-4611-9f21-8a24bb80225b",
+          "name": "Video Controls UI - Image Target",
+          "parameters": {
+            "background": {
+              "type": "entity",
+              "id": "852dd534-a2c7-4e82-816c-1037ef8ebc81"
+            },
+            "playbackImage": {
+              "type": "entity",
+              "id": "250c6006-e6e1-4acd-9276-122d6ce24ed0"
+            },
+            "imageTargetName": "beach-target"
+          }
+        }
+      },
+      "geometry": {
+        "height": 0.563,
+        "type": "plane",
+        "width": 1
+      },
+      "id": "a605d0b1-964b-42a7-8c17-4cb2b7b6d89a",
+      "material": {
+        "color": "#fcfcfc",
+        "side": "front",
+        "type": "basic",
+        "wireframe": false,
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/videos/beach.mp4"
+        },
+        "roughness": 1
+      },
+      "name": "Video Surface - Image Target",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.20000000000000004,
+        0.20000000000000004,
+        0.20000000000000004
+      ],
+      "videoControls": {
+        "paused": true,
+        "loop": true,
+        "volume": 1,
+        "positional": false
+      },
+      "order": 5.5219435267847405,
+      "shadow": {
+        "castShadow": true,
+        "receiveShadow": true
+      },
+      "prefab": true
+    },
+    "852dd534-a2c7-4e82-816c-1037ef8ebc81": {
+      "id": "852dd534-a2c7-4e82-816c-1037ef8ebc81",
+      "position": [
+        0,
+        0,
+        0.001
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.0000000000000004,
+        1.0000000000000004,
+        1.0000000000000004
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a605d0b1-964b-42a7-8c17-4cb2b7b6d89a",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 56,
+        "type": "3d",
+        "background": "#000000",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Background"
+    },
+    "250c6006-e6e1-4acd-9276-122d6ce24ed0": {
+      "id": "250c6006-e6e1-4acd-9276-122d6ce24ed0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "852dd534-a2c7-4e82-816c-1037ef8ebc81",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/icons/pause-button.png"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "name": "Image"
+    },
+    "a38f127b-5940-4077-9fc9-698f9856b497": {
+      "id": "a38f127b-5940-4077-9fc9-698f9856b497",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "name": "Video Surface - Image Target",
+      "instanceData": {
+        "instanceOf": "a605d0b1-964b-42a7-8c17-4cb2b7b6d89a",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "0dc1c37f-fd42-41ae-9c5d-0355dce41edf",
+      "components": {
+        "3dd9dc04-ebcd-4611-9f21-8a24bb80225b": {
+          "id": "3dd9dc04-ebcd-4611-9f21-8a24bb80225b",
+          "name": "Video Controls UI - Image Target",
+          "parameters": {
+            "background": {
+              "type": "entity",
+              "id": "852dd534-a2c7-4e82-816c-1037ef8ebc81"
+            },
+            "playbackImage": {
+              "type": "entity",
+              "id": "250c6006-e6e1-4acd-9276-122d6ce24ed0"
+            },
+            "imageTargetName": "palms-target"
+          }
+        }
+      },
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "material": {
+        "color": "#fcfcfc",
+        "side": "front",
+        "type": "basic",
+        "wireframe": false,
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/videos/palms.mp4"
+        },
+        "roughness": 1
+      }
+    },
+    "8a55ae5d-2de6-4e9c-9cfb-d3171542689b": {
+      "id": "8a55ae5d-2de6-4e9c-9cfb-d3171542689b",
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dda7c5ad-379d-4e76-becd-47214d7ee511",
+      "components": {},
+      "name": "Beach",
+      "imageTarget": {
+        "name": "beach-target"
+      }
+    },
+    "569f5985-15ac-4264-bd72-ddcc04adb0aa": {
+      "id": "569f5985-15ac-4264-bd72-ddcc04adb0aa",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "name": "Video Surface - Image Target",
+      "instanceData": {
+        "instanceOf": "a605d0b1-964b-42a7-8c17-4cb2b7b6d89a",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "8a55ae5d-2de6-4e9c-9cfb-d3171542689b",
+      "components": {},
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "82893822-d5ab-4267-8c16-99bd19e44764": {
+      "id": "82893822-d5ab-4267-8c16-99bd19e44764",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "07e9f7e1-ea77-4843-aacf-7ecf382ae061",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Directional Light",
+      "order": 0.4522159515769232
+    },
+    "c575459e-2436-40dc-b603-569abcb45744": {
+      "id": "c575459e-2436-40dc-b603-569abcb45744",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "07e9f7e1-ea77-4843-aacf-7ecf382ae061",
+      "components": {},
+      "light": {
+        "type": "ambient"
+      },
+      "name": "Ambient Light",
+      "order": 1.807685094693333
+    },
+    "575c0c70-fbb9-44ed-b7ed-0ec0c7e9bc7e": {
+      "id": "575c0c70-fbb9-44ed-b7ed-0ec0c7e9bc7e",
+      "position": [
+        0,
+        5,
+        7
+      ],
+      "rotation": [
+        1.841291974239769e-17,
+        -0.9537169507482269,
+        0.3007057995042731,
+        5.83983205513195e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "07e9f7e1-ea77-4843-aacf-7ecf382ae061",
+      "components": {},
+      "name": "Camera",
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "xrCameraType": "3dOnly",
+          "phone": "3D",
+          "desktop": "3D",
+          "headset": "disabled"
+        }
+      },
+      "order": 2.485996574821945
+    },
+    "56423afb-7112-47bc-82f5-e59af7ae3220": {
+      "id": "56423afb-7112-47bc-82f5-e59af7ae3220",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4,
+        4,
+        4
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1.78,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "07e9f7e1-ea77-4843-aacf-7ecf382ae061",
+      "components": {
+        "6eecfbe9-3924-4d23-acd1-eb0c658a3c6a": {
+          "id": "6eecfbe9-3924-4d23-acd1-eb0c658a3c6a",
+          "name": "chromakey",
+          "parameters": {
+            "video": "assets/chromakey/dot.mp4",
+            "width": 1920,
+            "height": 1080,
+            "r": 102,
+            "g": 204,
+            "b": 119,
+            "similarity": 0.095,
+            "smoothness": 0.082,
+            "spill": 0.214
+          }
+        }
+      },
+      "name": "Plane",
+      "order": 3.7588873178366753
+    },
+    "5c2fdfd5-bac7-44e4-88cc-1b56e5b6686d": {
+      "id": "5c2fdfd5-bac7-44e4-88cc-1b56e5b6686d",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Directional Light",
+      "order": 0.12005810923276361
+    },
+    "8f0168e2-4d1a-4b90-87ec-26354b345c8f": {
+      "id": "8f0168e2-4d1a-4b90-87ec-26354b345c8f",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "components": {},
+      "light": {
+        "type": "ambient"
+      },
+      "name": "Ambient Light",
+      "order": 1.9764950951704225
+    },
+    "c45ba733-d750-40f3-8da9-ccefc2983765": {
+      "id": "c45ba733-d750-40f3-8da9-ccefc2983765",
+      "position": [
+        0,
+        5,
+        7
+      ],
+      "rotation": [
+        1.841291974239769e-17,
+        -0.9537169507482269,
+        0.3007057995042731,
+        5.83983205513195e-17
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "components": {},
+      "name": "Camera",
+      "camera": {
+        "type": "perspective"
+      },
+      "order": 2.6530416311770386
+    },
+    "d8f9f812-ed55-46cc-b562-4bbc61b7d83f": {
+      "id": "d8f9f812-ed55-46cc-b562-4bbc61b7d83f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "components": {
+        "79a2c3ff-be80-4f66-a114-ad947ca3513c": {
+          "id": "79a2c3ff-be80-4f66-a114-ad947ca3513c",
+          "name": "boombox",
+          "parameters": {
+            "screenRef": {
+              "type": "entity",
+              "id": "eb2df0c4-7e79-41da-941b-7aef621e393e"
+            },
+            "imagePlay": "assets/icons/play-button.png",
+            "imagePause": "assets/icons/pause-button.png"
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/spatial-audio/boombox.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "boombox.glb",
+      "order": 3.8274707495864413,
+      "shadow": {
+        "castShadow": true
+      },
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/spatial-audio/tiki-bar.mp3"
+        },
+        "positional": true
+      }
+    },
+    "eb2df0c4-7e79-41da-941b-7aef621e393e": {
+      "id": "eb2df0c4-7e79-41da-941b-7aef621e393e",
+      "position": [
+        0,
+        0.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d8f9f812-ed55-46cc-b562-4bbc61b7d83f",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 100,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/white_gray_tiles-m8f52fip.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "name": "Screen",
+      "order": 5.083787678536722
+    },
+    "08024d1f-3534-4494-93f2-05b8e3b41611": {
+      "id": "08024d1f-3534-4494-93f2-05b8e3b41611",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071068,
+        0,
+        0,
+        0.7071068
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 25,
+        "height": 25
+      },
+      "material": {
+        "type": "shadow",
+        "color": "#000000",
+        "opacity": 0.4
+      },
+      "parentId": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "components": {},
+      "name": "Plane",
+      "order": 5.217953287810563,
+      "shadow": {
+        "receiveShadow": true
+      }
+    },
+    "a0fbf9c0-3b90-4b32-b667-55ace536987c": {
+      "id": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "position": [
+        0,
+        0,
+        0.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "ae503c31-edab-4c08-8db6-b0a31dff83ae": {
+          "id": "ae503c31-edab-4c08-8db6-b0a31dff83ae",
+          "name": "options-toggle",
+          "parameters": {
+            "selectorButton": {
+              "type": "entity",
+              "id": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7"
+            },
+            "options": {
+              "type": "entity",
+              "id": "b280d8f8-fd44-41b7-8d42-6fc6242cda39"
+            }
+          }
+        },
+        "1b7e28d5-3787-4a01-a9cd-8712cc181735": {
+          "id": "1b7e28d5-3787-4a01-a9cd-8712cc181735",
+          "name": "space-selector",
+          "parameters": {
+            "space1": "Video Surface",
+            "space2": "Image Target",
+            "space3": "Chromakey",
+            "space4": "Spatial Audio",
+            "option1": {
+              "type": "entity",
+              "id": "4b478aba-98a3-414d-af72-e3a114bd995c"
+            },
+            "option2": {
+              "type": "entity",
+              "id": "db284086-853f-4992-bd45-a8c1e6170253"
+            },
+            "option3": {
+              "type": "entity",
+              "id": "6d146568-a215-4560-af69-999907c67441"
+            },
+            "option4": {
+              "type": "entity",
+              "id": "c92928cf-f4dc-46dc-943f-f28769137cea"
+            },
+            "activeSpaceName": {
+              "type": "entity",
+              "id": "32ba032d-ce16-445d-8e91-1780bfed5405"
+            },
+            "option1Name": {
+              "type": "entity",
+              "id": "130615c8-06f0-4f66-8c79-0fb02d25140f"
+            },
+            "option2Name": {
+              "type": "entity",
+              "id": "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4"
+            },
+            "option3Name": {
+              "type": "entity",
+              "id": "aedc2454-960d-4b39-bd9d-c840a86e6a39"
+            },
+            "option4Name": {
+              "type": "entity",
+              "id": "a80f97d6-5af0-4569-aa9e-d535d2e85ca9"
+            },
+            "option1Icon": {
+              "type": "entity",
+              "id": "d890302c-cd03-4051-9488-ed1b8f89e25c"
+            },
+            "option2Icon": {
+              "type": "entity",
+              "id": "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4"
+            },
+            "option3Icon": {
+              "type": "entity",
+              "id": "b00e7e1d-ff22-4c24-8c7c-a1a8892ebbdb"
+            },
+            "option4Icon": {
+              "type": "entity",
+              "id": "2cb424db-939d-41d9-b7d1-56c8ac962f4e"
+            }
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 160,
+        "height": 109,
+        "type": "overlay",
+        "gap": 4,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "position": "absolute",
+        "top": 20,
+        "left": 20,
+        "bottom": "",
+        "right": "",
+        "alignItems": "flex-start",
+        "justifyContent": "flex-start",
+        "flexWrap": "nowrap"
+      },
+      "name": "Space Selector",
+      "hidden": false,
+      "order": 0,
+      "parentId": "96427112-d5da-4f0c-8e45-298e4c1822c9"
+    },
+    "f5a9b81f-ac84-43f0-bb27-43ff090f76e7": {
+      "id": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "position": [
+        0,
+        -1.8068924473905623,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "components": {},
+      "ui": {
+        "borderColor": "#464766",
+        "borderWidth": 1,
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "background": "#1c1d2a",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Selector Button",
+      "order": 1,
+      "hidden": false
+    },
+    "32ba032d-ce16-445d-8e91-1780bfed5405": {
+      "id": "32ba032d-ce16-445d-8e91-1780bfed5405",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "components": {},
+      "name": "Active Space Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Active Space",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 2
+    },
+    "dee54314-0b39-464e-b0ed-92a133847d28": {
+      "id": "dee54314-0b39-464e-b0ed-92a133847d28",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f5a9b81f-ac84-43f0-bb27-43ff090f76e7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/chevron.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Dropdown Icon",
+      "order": 3,
+      "hidden": false
+    },
+    "b280d8f8-fd44-41b7-8d42-6fc6242cda39": {
+      "id": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "position": [
+        0,
+        -1.8068924473905623,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a0fbf9c0-3b90-4b32-b667-55ace536987c",
+      "components": {},
+      "ui": {
+        "borderColor": "#464766",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": "100%",
+        "height": 150,
+        "type": "3d",
+        "background": "#0f0e1a",
+        "backgroundOpacity": 1,
+        "borderRadius": 10,
+        "gap": 0
+      },
+      "name": "Selector Options",
+      "order": 4,
+      "hidden": false
+    },
+    "4b478aba-98a3-414d-af72-e3a114bd995c": {
+      "id": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 1",
+      "order": 5
+    },
+    "130615c8-06f0-4f66-8c79-0fb02d25140f": {
+      "id": "130615c8-06f0-4f66-8c79-0fb02d25140f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "components": {},
+      "name": "Option 1 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 1",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 6
+    },
+    "d890302c-cd03-4051-9488-ed1b8f89e25c": {
+      "id": "d890302c-cd03-4051-9488-ed1b8f89e25c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4b478aba-98a3-414d-af72-e3a114bd995c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 1 Icon",
+      "order": 7,
+      "hidden": true
+    },
+    "db284086-853f-4992-bd45-a8c1e6170253": {
+      "id": "db284086-853f-4992-bd45-a8c1e6170253",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 2",
+      "order": 8
+    },
+    "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4": {
+      "id": "a1376620-a5e3-4f9c-8f11-91ce9e1e7fe4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "db284086-853f-4992-bd45-a8c1e6170253",
+      "components": {},
+      "name": "Option 2 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 2",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 9
+    },
+    "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4": {
+      "id": "1dc18cbc-43a1-4574-9bcf-8de0d8b548b4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 2 Icon",
+      "order": 10,
+      "parentId": "db284086-853f-4992-bd45-a8c1e6170253",
+      "hidden": true
+    },
+    "6d146568-a215-4560-af69-999907c67441": {
+      "id": "6d146568-a215-4560-af69-999907c67441",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 3",
+      "order": 11
+    },
+    "aedc2454-960d-4b39-bd9d-c840a86e6a39": {
+      "id": "aedc2454-960d-4b39-bd9d-c840a86e6a39",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6d146568-a215-4560-af69-999907c67441",
+      "components": {},
+      "name": "Option 3 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 3",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 12
+    },
+    "b00e7e1d-ff22-4c24-8c7c-a1a8892ebbdb": {
+      "id": "b00e7e1d-ff22-4c24-8c7c-a1a8892ebbdb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 3 Icon",
+      "order": 13,
+      "parentId": "6d146568-a215-4560-af69-999907c67441",
+      "hidden": true
+    },
+    "c92928cf-f4dc-46dc-943f-f28769137cea": {
+      "id": "c92928cf-f4dc-46dc-943f-f28769137cea",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b280d8f8-fd44-41b7-8d42-6fc6242cda39",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100%",
+        "height": 35,
+        "flexDirection": "row",
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Option 4",
+      "order": 14
+    },
+    "a80f97d6-5af0-4569-aa9e-d535d2e85ca9": {
+      "id": "a80f97d6-5af0-4569-aa9e-d535d2e85ca9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c92928cf-f4dc-46dc-943f-f28769137cea",
+      "components": {},
+      "name": "Option 4 Name",
+      "ui": {
+        "width": "80%",
+        "height": 20,
+        "text": "Option 4",
+        "color": "#ffffff",
+        "fontSize": 16,
+        "textAlign": "left",
+        "verticalTextAlign": "center"
+      },
+      "order": 15
+    },
+    "2cb424db-939d-41d9-b7d1-56c8ac962f4e": {
+      "id": "2cb424db-939d-41d9-b7d1-56c8ac962f4e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "image": {
+          "type": "asset",
+          "asset": "assets/space-selector/check.svg"
+        },
+        "backgroundOpacity": 0.95,
+        "background": "#ffffff",
+        "backgroundSize": "contain"
+      },
+      "name": "Option 4 Icon",
+      "order": 16,
+      "parentId": "c92928cf-f4dc-46dc-943f-f28769137cea",
+      "hidden": true
+    },
+    "ce5f9d1e-6e75-4d91-bbb9-3ce9cdb67606": {
+      "id": "ce5f9d1e-6e75-4d91-bbb9-3ce9cdb67606",
+      "position": [
+        -0.7800900755071418,
+        2.5,
+        -3.239762769773802
+      ],
+      "rotation": [
+        0,
+        1,
+        0,
+        -6.123233995736766e-17
+      ],
+      "scale": [
+        9.999999999999998,
+        10,
+        9.999999999999998
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8798a62f-a986-4b73-9752-ca156daf1761",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/videos/furniture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "furniture.glb",
+      "order": 3.2145330096826825,
+      "shadow": {
+        "castShadow": true
+      }
+    }
+  },
+  "spaces": {
+    "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6": {
+      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "id": "d4a7504e-d9b7-4bbc-8ec9-3d1c3bb0c1d6",
+      "name": "Video Surface",
+      "reflections": {
+        "type": "url",
+        "url": "https://cdn.8thwall.com/web/assets/envmap/basic_env_map-m9hqpneh.jpg"
+      },
+      "includedSpaces": [
+        "96427112-d5da-4f0c-8e45-298e4c1822c9"
+      ],
+      "sky": {
+        "type": "gradient",
+        "colors": [
+          "#464766",
+          "#ffffff"
+        ]
+      }
+    },
+    "dda7c5ad-379d-4e76-becd-47214d7ee511": {
+      "id": "dda7c5ad-379d-4e76-becd-47214d7ee511",
+      "name": "Image Target",
+      "activeCamera": "4a6717eb-56ce-45ec-80fd-6f0cabf45881",
+      "reflections": {
+        "type": "url",
+        "url": "https://cdn.8thwall.com/web/assets/envmap/basic_env_map-m9hqpneh.jpg"
+      },
+      "includedSpaces": [
+        "96427112-d5da-4f0c-8e45-298e4c1822c9"
+      ]
+    },
+    "07e9f7e1-ea77-4843-aacf-7ecf382ae061": {
+      "id": "07e9f7e1-ea77-4843-aacf-7ecf382ae061",
+      "name": "Chromakey",
+      "activeCamera": "575c0c70-fbb9-44ed-b7ed-0ec0c7e9bc7e",
+      "includedSpaces": [
+        "96427112-d5da-4f0c-8e45-298e4c1822c9"
+      ]
+    },
+    "361abb10-6b80-4f05-abac-32d5ffa40486": {
+      "id": "361abb10-6b80-4f05-abac-32d5ffa40486",
+      "name": "Spatial Audio",
+      "activeCamera": "c45ba733-d750-40f3-8da9-ccefc2983765",
+      "includedSpaces": [
+        "96427112-d5da-4f0c-8e45-298e4c1822c9"
+      ]
+    },
+    "96427112-d5da-4f0c-8e45-298e4c1822c9": {
+      "id": "96427112-d5da-4f0c-8e45-298e4c1822c9",
+      "name": "Space Selector",
+      "activeCamera": "5350ada2-9002-426a-9f82-95090d141fa6"
+    }
+  },
+  "runtimeVersion": {
+    "type": "version",
+    "level": "major",
+    "major": 2,
+    "minor": 0,
+    "patch": 0
+  },
+  "historyVersion": "mm5oorp8"
+}
