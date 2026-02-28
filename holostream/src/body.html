@@ -1,0 +1,57 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+<div class="over">
+  <span id="promptText"></span>
+  <img id="pauseBtn" class="media-btn" src="./assets/icons/pause.svg" style="display: none;">
+  <img id="muteBtn" class="media-btn" src="./assets/icons/sound.svg" style="display: none;">
+  <div id="gradient-box"></div>
+</div>
+
+<a-scene
+  xrextras-gesture-detector
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="antialias: true; colorManagement: true; physicallyCorrectLights: true;"
+  xrweb="allowedDevices: any">
+
+  <xrextras-resource id="logo" src="./assets/icons/arcturus-logo.png"></xrextras-resource>
+  
+  <a-camera
+    id="camera"
+    position="0 2 3"
+    raycaster="objects: .cantap"
+    cursor="fuse: false; rayOrigin: mouse;">
+  </a-camera>
+    
+  <a-entity
+    light="
+      type: directional;
+      intensity: 0.8;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraTop: 10;
+      target: #holo;"
+    xrextras-attach="target: holo; offset: 0 15 0;"
+    shadow>
+  </a-entity>
+ 
+  <holostream-hologram
+    id="holo"
+    src="https://holostream-dev.arcturus.studio/media/23f517e8-a10e-48ae-bc76-8ccde959937d/stream/dash/manifest.mpd"
+    xrextras-hold-drag="riseHeight: 0.4"
+    xrextras-two-finger-rotate
+    xrextras-pinch-scale>
+  </holostream-hologram>
+  
+  <a-entity
+    id="ground"
+    class="cantap"
+    geometry="primitive: box"
+    material="shader: shadow; transparent: true; opacity: 0.4"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    shadow="cast: false">
+  </a-entity>
+</a-scene>
+

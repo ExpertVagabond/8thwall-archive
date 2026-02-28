@@ -1,0 +1,183 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* AR SCENE UI */
+
+#top-section {
+  position: absolute;
+  width: fit-content;
+  max-width: 80vw;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 10px 30px;
+  z-index: 1;
+}
+
+#top-section button {
+  padding: 10px 20px;
+  background-color: #5AD6FF;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* MAP SCENE UI */
+
+#ui-section {
+  position: absolute;
+  top: -200px;
+  width: fit-content;
+  max-width: 80vw;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 0px 0px 15px 15px;
+  background: white;
+  padding: 10px 30px;
+  z-index: 1;
+}
+
+#ui-section span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+#ui-section img {
+  display: block;
+}
+
+#ui-section button {
+  padding: 10px 20px;
+  background-color: #5AD6FF;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#ui-section button:active {
+  background-color: #44acce;
+}
+
+#ui-section button:disabled {
+  background-color: #44acce;
+  opacity: 0.5;
+}
+
+#ui-section h3 {
+  margin: 0px 0px 8px 0px;
+  text-align: center;
+}
+
+.slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-down {
+  animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-up {
+  0% {
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, 200px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    left: 50%;
+    transform: translate(-50%, 200px);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+}
+
+
+/* LOADING SCREEN */
+
+#poweredby {
+  width: 35vw;
+  max-width: 200px;
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+  display: block;
+}
+
+.gradient-move { animation: gradient-move 10s linear infinite; }
+@keyframes gradient-move {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+#gradient {
+  z-index: 9;
+  /* add another 100% for each new color,
+  always repeat the first two colors in the array*/
+  background-size: 400% 400%;
+  background-image: linear-gradient(140deg, #7611B6, #563BA4, #3A4AAA, #7611B6, #563BA4);
+}
+
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  border-top: 3px solid rgba(255,255,255, .5);
+  border-right: 3px solid transparent;
+  border-radius: 50%;
+  animation: rotation .8s linear infinite;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in { animation: fade-in 0.25s linear forwards; }
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-out { animation: fade-out 0.25s linear forwards; }
+@keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}

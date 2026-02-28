@@ -1,0 +1,57 @@
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<a-scene 
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  xrextras-pause-on-blur
+  renderer="
+    maxCanvasWidth: 960; 
+    maxCanvasHeight: 960; 
+    colorManagement: true;"
+  xrface="
+    mirroredDisplay: true; 
+    meshGeometry: face;
+    cameraDirection: front; 
+    allowedDevices: any;">
+  
+  <a-assets>
+    <a-asset-item id="avatarModel" src="./assets/models/avatar.glb"></a-asset-item>
+    
+    <img id="bg" src="./assets/background/cyberpunk-bg.jpg">
+    <img id="posx" src="./assets/night/px.png">
+    <img id="posy" src="./assets/night/py.png">
+    <img id="posz" src="./assets/night/pz.png">
+    <img id="negx" src="./assets/night/nx.png">
+    <img id="negy" src="./assets/night/ny.png">
+    <img id="negz" src="./assets/night/nz.png">
+  </a-assets>
+  
+  <xrextras-capture-button></xrextras-capture-button>
+  <xrextras-capture-preview></xrextras-capture-preview>
+  
+  <a-camera position="0 1 3"></a-camera>
+
+  <a-entity id="avatar" avatar-anchor>
+    <a-entity 
+      gltf-model="#avatarModel"
+      reflections="type: static"
+      scale="8 8 8" 
+      position="0 -14 0.35" 
+      rotation="0 180 0"
+    ></a-entity>
+  </a-entity>
+  
+  <a-light id="dir-light" color="#F7C3FF" type="directional" position="0 1.8 3" intensity="1"></a-light>
+  <a-light id="amb-light" type="ambient" intensity="0.3"></a-light>
+
+  <a-plane 
+    src="#bg" 
+    material="shader:flat;"
+    position="0 1 0" 
+    width="30" 
+    height="30" 
+    scale="0.2 0.2 0.2"
+  ></a-plane>
+  
+</a-scene>

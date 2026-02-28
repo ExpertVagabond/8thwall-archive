@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Image Target Portal</title>
+  <meta itemprop="name" content="Image Target Portal">
+  <meta name="twitter:title" content="Image Target Portal">
+  <meta property="og:title" content="Image Target Portal">
+  <meta property="og:site_name" content="Image Target Portal">
+  <meta name="description" content="This example shows off the popular portal illusion in web AR using hider-material and an image target.">
+  <meta itemprop="description" content="This example shows off the popular portal illusion in web AR using hider-material and an image target.">
+  <meta property="og:description" content="This example shows off the popular portal illusion in web AR using hider-material and an image target.">
+  <meta name="twitter:description" content="This example shows off the popular portal illusion in web AR using hider-material and an image target.">
+  <script crossorigin="anonymous" src="./external/scripts/8frame-1.3.0.min.js"></script>
+  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
+  <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam">
+  </script>
+
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
+
+<!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
+<meta name="8thwall:renderer" content="aframe:1.3.0"/>
+<meta name="8thwall:package" content="@8thwall.xrextras"/>
+<meta name="8thwall:package" content="@8thwall.landing-page"/>
+
+<!-- Other external scripts and meta tags can also be added. -->
+
+</head>
+
+<body>
+<script src="bundle.js"></script>
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<a-scene
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement: true"
+  xrweb="disableWorldTracking: true">
+  
+  <a-assets>
+    <img id="field" src="./assets/field.jpg">
+    <a-asset-item id="ballModel" src="assets/ball-center.glb"></a-asset-item>
+  </a-assets>
+  
+  <a-camera></a-camera>
+  
+  <a-entity image-target-portal="name: wall" visible="false">
+    
+    <a-ring
+      id="portal"
+      radius-inner="0.001"
+      radius-outer="1000"
+      xrextras-hider-material
+    ></a-ring>
+    
+    <a-entity
+      id="ball"
+      position="0 0 -10"
+      gltf-model="#ballModel"
+      reflections="type: static"
+      animation__spin="
+        property: rotation;
+        dur: 3000;
+        from: 0 0 0;
+        to: 360 0 0;
+        loop: true;
+        easing: linear;">
+    </a-entity>
+    
+    <a-sky
+      rotation="0 90 0"
+      scale="0.015 0.015 -0.015"
+      src="#field"
+    ></a-sky>
+    
+  </a-entity>
+  
+  
+</a-scene>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<a-scene
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement: true"
+  xrweb="disableWorldTracking: true">
+  
+  <a-assets>
+    <img id="field" src="./assets/field.jpg">
+    <a-asset-item id="ballModel" src="assets/ball-center.glb"></a-asset-item>
+  </a-assets>
+  
+  <a-camera></a-camera>
+  
+  <a-entity image-target-portal="name: wall" visible="false">
+    
+    <a-ring
+      id="portal"
+      radius-inner="0.001"
+      radius-outer="1000"
+      xrextras-hider-material
+    ></a-ring>
+    
+    <a-entity
+      id="ball"
+      position="0 0 -10"
+      gltf-model="#ballModel"
+      reflections="type: static"
+      animation__spin="
+        property: rotation;
+        dur: 3000;
+        from: 0 0 0;
+        to: 360 0 0;
+        loop: true;
+        easing: linear;">
+    </a-entity>
+    
+    <a-sky
+      rotation="0 90 0"
+      scale="0.015 0.015 -0.015"
+      src="#field"
+    ></a-sky>
+    
+  </a-entity>
+  
+  
+</a-scene>

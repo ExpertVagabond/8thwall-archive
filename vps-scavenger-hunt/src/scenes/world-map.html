@@ -1,0 +1,81 @@
+<a-scene
+  focused-wayspot
+  map-loading-screen
+  renderer="color-management:true"
+  fog="color: white; type: exponential; density: 0.018;"
+  gltf-model="draco-decoder-path: https://cdn.8thwall.com/web/aframe/draco-decoder/">
+
+  <a-assets>
+    <a-asset-item id="doty-model" src=".././assets/map-assets/doty.glb"></a-asset-item>
+    <a-asset-item id="poi-model" src=".././assets/map-assets/poi-disc.glb"></a-asset-item>
+  </a-assets>
+
+  <div id="gradient" class="gradient-move absolute-fill">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <img id="poweredby" src="https://cdn.8thwall.com/web/img/almostthere/v2/poweredby-horiz-white-4.svg">
+
+  <div id="ui-section">
+    <h3 id="wayspot-title"></h3>
+    <span>
+      <img src=".././assets/map-assets/walk-icon.svg">
+      <p id="wayspot-distance"></p>
+      <button id="start-btn">Start AR</button>
+    </span>
+  </div>
+
+  <a-entity
+    light="type: directional;
+           intensity: 0.3;
+           cast-shadow: true;
+           shadow-map-height: 2048;
+           shadow-map-width: 2048;
+           shadow-camera-top: 15;
+           shadow-camera-bottom: -15;
+           shadow-camera-left: -15;
+           shadow-camera-right: 15;
+           shadow-radius: 4;
+           target: #character;"
+    position="0 10 0"
+    shadow>
+  </a-entity>
+  
+  <a-light type="ambient" intensity="0.8"></a-light>
+  
+  <a-camera 
+    near="1" 
+    far="200"
+    raycaster="objects: .cantap"
+    cursor="fuse: false; rayOrigin: mouse;"
+    wasd-controls="enabled: false"
+    lightship-map-controls="target: 0 4 0; min-distance: 5.5; max-distance: 25;">
+  </a-camera>
+
+  <a-sky radius="100" material="shader: lightship-map-sky-gradient"></a-sky>
+
+  <a-plane 
+    scale="100 100 1"
+    rotation="-90 0 0"
+    position="0 0.01 0" 
+    material="shader: shadow" 
+    shadow="cast: false; receive: true;"
+  ></a-plane>
+  
+  <lightship-map 
+    scale="100 100 100" 
+    responsive-map-theme="mode: time"
+    lightship-map-add-wayspots="primitive: custom-wayspot; meters: 25; min: 0.05;">
+    <a-entity
+      id="character"
+      gltf-model="#doty-model"
+      rotation="0 180 0"
+      scale="0.1 0.1 0.1"
+      lightship-map-motion-direction
+      lightship-map-walk-animation="idle: idle; walk: walk"
+      shadow
+    ></a-entity>
+  </lightship-map>
+
+</a-scene>

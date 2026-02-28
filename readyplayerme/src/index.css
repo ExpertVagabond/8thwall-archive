@@ -1,0 +1,157 @@
+/* JOYSTICK */
+.joystick-container {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.joystick-container.visible {
+  opacity: 1;
+}
+
+.joystick {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10000px;
+  z-index: 5;
+}
+
+.joystick.position {
+  width: 15vmin;
+  height: 15vmin;
+  background-color: white;
+  z-index: 10;
+}
+
+.joystick.origin {
+  width: 40vmin;
+  height: 40vmin;
+  border: 2vmin solid white;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', monospace;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  
+  z-index: 10;
+  position: absolute;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#recenterBtn {
+  position: absolute;
+  z-index: 5;
+  left: 1vh;
+  bottom: 1vh;
+  max-height: 6vh;
+  rotate: -90deg;
+}
+
+.pulse-once { animation: pulse-once 0.2s cubic-bezier(0.785, 0.135, 0.150, 0.860) both; }
+@keyframes pulse-once {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.8);}
+  100% {transform: scale(1);}
+}
+
+/* DESKTOP AND VR STYLES */
+@media (min-width:320px)  { }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  {
+  
+  .joystick.position {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: white;
+    z-index: 10;
+  }
+  
+  .joystick.origin {
+    width: 20vmin;
+    height: 20vmin;
+    border: 1vmin solid white;
+  }
+}
+
+/* SWAP CAMERA ELEMENTS */
+#swap-cam-btn {
+  position: absolute;
+  z-index: 5;
+  right: 1vh;
+  bottom: 1vh;
+  pointer-events: auto;
+  max-height: 6vh;
+}
+#flipBg {
+  pointer-events: none;
+  background-color: black;
+  z-index: 20;
+  opacity: 0;
+}
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.recorder-container {
+  z-index: 19;
+}
+
+/* animations */
+.fade-out { animation: fade-out 0.5s linear forwards; }
+@keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.pulse-once { animation: pulse-once 0.2s cubic-bezier(0.785, 0.135, 0.150, 0.860) both; }
+@keyframes pulse-once {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.8);}
+  100% {transform: scale(1);}
+}
+
+/* iFrame Styles */
+.container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 200;  
+}
+      
+.iframe-content {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+iframe {
+  border: none;
+  height: 100%;
+}
+
+#AvatarSuccess{
+    z-index: 900;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(26,164,174);
+    background: -moz-linear-gradient(326deg, rgba(26,164,174,1) 0%, rgba(22,158,168,1) 48%, rgba(20,178,190,1) 48%, rgba(26,164,174,1) 100%);
+    background: -webkit-linear-gradient(326deg, rgba(26,164,174,1) 0%, rgba(22,158,168,1) 48%, rgba(20,178,190,1) 48%, rgba(26,164,174,1) 100%);
+    background: linear-gradient(326deg, rgba(26,164,174,1) 0%, rgba(22,158,168,1) 48%, rgba(20,178,190,1) 48%, rgba(26,164,174,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1aa4ae",endColorstr="#1aa4ae",GradientType=1); 
+    font-size: 4vw;
+}

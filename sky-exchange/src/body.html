@@ -1,0 +1,72 @@
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<div id="bottomBar" style="display:none">
+  <button id="leftButton">
+    <img src="./assets/UI/triangle.svg">
+  </button>
+  <button id="rightButton">
+    <img src="./assets/UI/triangle.svg">
+  </button>
+</div>
+
+<a-scene 
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  sky-coaching-overlay
+  sky-recenter
+  renderer="colorManagement: true"
+  gltf-model="dracoDecoderPath: https://cdn.8thwall.com/web/aframe/draco-decoder/"
+  xrlayers="cameraDirection: back;">
+  
+  <a-assets>
+    <a-asset-item id="doty" src='./assets/models/doty.glb'></a-asset-item>
+    <a-asset-item id="airship" src='./assets/models/airship.glb'></a-asset-item>
+    <img id="skyTexture" src='./assets/textures/space.png'>
+
+    <!-- for remote authoring -->
+    <img id="groundTex" src='./assets/textures/ground.svg'>
+    <img id="foreground" src='./assets/textures/foreground.svg'>
+  </a-assets>
+
+  <a-camera wasd-controls-enabled="false" position="0 0 0"></a-camera>
+    
+  <sky-scene id="skyScene" invert-layer-mask="false" sky-debug>
+
+    <a-sky material="src: #skyTexture; transparent: true; opacity: 1; fog:false;"></a-sky>
+
+    <a-entity id="pivot" position="0 0 0" rotation="0 0 0">
+      <a-entity
+        gltf-model="#doty"
+        id="dotyModel"
+        position="4 0 -25"
+        rotation="0 0 0" 
+        scale="100 100 100"
+        animation-mixer="clip: idle; loop: repeat;"
+        sky-arrows>
+      </a-entity>
+    </a-entity>    
+    
+    <a-entity
+      gltf-model="#airship"
+      position="-20 20 -55"
+      rotation="0 -15 0" 
+      animation-mixer="clip: idle; loop: repeat;"
+      scale="10 10 10"
+    ></a-entity>
+     
+    <a-entity 
+      light="
+        type: directional; 
+        castShadow: true; 
+        color: white; 
+        intensity: 0.2" 
+      position="5 10 7"
+      rotation="45 0 45">
+    </a-entity>
+    
+    <a-entity light="type: ambient; intensity: 1;"></a-entity>
+  </sky-scene>
+
+</a-scene>

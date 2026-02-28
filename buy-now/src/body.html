@@ -1,0 +1,64 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+<a-scene
+  landing-page
+  xrextras-gesture-detector
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement: true"
+  xrweb="allowedDevices: any;
+    defaultEnvironmentFogIntensity: 0.5; 
+    defaultEnvironmentFloorTexture: #groundTex; 
+    defaultEnvironmentFloorColor: #FFF;
+    defaultEnvironmentSkyBottomColor: #B4C4CC; 
+    defaultEnvironmentSkyTopColor: #5ac8fa;
+    defaultEnvironmentSkyGradientStrength: 0.5">
+
+  <a-assets>
+    <a-asset-item id="productModel" src="./assets/Doty_in_Chair.glb"></a-asset-item>
+    <img id="groundTex" src="assets/textures/concrete.jpg">
+  </a-assets>
+
+  <a-camera
+    id="camera"
+    position="0 1.75 4"
+    raycaster="objects: .cantap"
+    cursor="fuse: false; rayOrigin: mouse;">
+  </a-camera>
+  
+  <a-entity
+    light="type: directional;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraTop: 20;
+      shadowCameraBottom: -20;
+      shadowCameraLeft: -20;
+      shadowCameraRight: 20;
+      target: #product;
+      shadowRadius: 5"
+    xrextras-attach="target: product; offset: 0 15 0;"
+    shadow>
+  </a-entity>
+  
+  <a-light type="ambient"></a-light>
+
+  <a-entity
+    id="product"
+    gltf-model="#productModel"
+    rotation="0 0 0"
+    xrextras-hold-drag="rise-height: 0"
+    xrextras-two-finger-rotate
+    shadow="receive: false"
+    product-link="text: Buy now; href: https://nianticsupply.com/products/captain-doty-plush">
+  </a-entity>
+
+  <a-plane
+    id="ground"
+    rotation="-90 0 0"
+    width="100"
+    height="100"
+    material="shader: shadow; opacity: 0.5;"
+    shadow
+  ></a-plane>
+</a-scene>

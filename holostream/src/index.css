@@ -1,0 +1,58 @@
+/* Style for "Tap To Place Hologram" text overlay */
+.over {
+  z-index: 10;
+  pointer-events: none;
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', monospace;
+  text-shadow: 0px 0px 5px black;
+}
+
+#promptText {
+  font-size: 2em;
+  bottom: 12vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.media-btn {
+  position: absolute;
+  pointer-events: auto;
+  width: 7vw;
+  bottom: 2vh;
+}
+
+#pauseBtn {
+  left: 4vw;
+}
+
+#muteBtn {
+  right: 4vw;
+}
+
+#gradient-box {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+  z-index: -1;
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 768px) { /* For Desktop */
+  #promptText {
+    font-size: 3em;
+  }
+
+  .media-btn {
+    bottom: 4vh;
+    width: 4vw;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencyId": "f7127f2a-890f-464f-b833-d318706d6cae",
+  "moduleId": "d1b1a397-16bf-4265-8235-1350ea721ac5",
+  "alias": "payments",
+  "target": {
+    "type": "version",
+    "level": "major",
+    "major": 1,
+    "minor": 1,
+    "patch": 2
+  }
+}

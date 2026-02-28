@@ -1,0 +1,83 @@
+<!-- Copyright (c) 2021 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<div id="overlay" style="z-index: 2">
+  <img id="recenterBtn" src="assets/reset.svg">
+  <h3>DRAG TO MOVE</h3>
+</div>
+
+<!-- Add the tap-place component to the scene so it has an effect -->
+<a-scene
+  xrextras-gesture-detector
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement:true"
+  xrweb="allowedDevices: any">
+
+  <a-assets>
+    <a-asset-item id="robot_model" src="assets/robot.glb"></a-asset-item>
+    <a-asset-item id="coin-model" src="assets/coin.glb"></a-asset-item>
+  </a-assets>
+
+  <a-camera
+    id="camera"
+    position="0 4 4">
+  </a-camera>
+
+  <a-entity
+    light="
+      type: directional;
+      intensity: 0.9;
+      castShadow: true;
+      shadowMapHeight:2048;
+      shadowMapWidth:2048;
+      shadowCameraTop: 20;
+      shadowCameraBottom: -20;
+      shadowCameraRight: 20;
+      shadowCameraLeft: -20;
+      target: #character;
+      shadowRadius: 4"
+    xrextras-attach="target: character; offset: 8 15 4"
+    position="1 4.3 2.5"
+    shadow>
+  </a-entity>
+
+  <a-light type="ambient" intensity="0.5"></a-light>
+
+  <a-entity
+    id="character"
+    character-move
+    character-recenter
+    gltf-model="#robot_model"
+    gltf-morph="morphtarget: Surprised; value: 0"
+    animation-mixer="clip: Idle; loop: repeat; crossFadeDuration: 0.4"
+    scale="0.5 0.5 0.5"
+    shadow
+  ></a-entity>
+
+    <a-entity 
+    position="0 0.1 -5" 
+    geometry="primitive: ring; radius-inner: 1.4; radius-outer: 1.5"
+    material="color: #AD50FF"
+    rotation="-90 0 0" 
+    proximity-trigger="radius: 1.5"
+    xrextras-spin
+    shadow>
+     <a-entity 
+       id="coin"
+       gltf-model="#coin-model"
+       cubemap-realtime
+       position="0 0 2"
+     ></a-entity>
+  </a-entity>
+
+  <a-box
+    id="ground"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    material="shader: shadow; transparent: true; opacity: 0.4"
+    shadow>
+  </a-box>
+</a-scene>
+

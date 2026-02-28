@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencyId": "f4e20f2a-4d47-4603-b831-82569a14dbe6",
+  "moduleId": "3c52dc34-17af-4c81-ada8-ece805df837d",
+  "alias": "purplesquirrel",
+  "target": {
+    "type": "branch",
+    "branch": "master"
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A-Frame: Ready Player Me</title>
+  <meta itemprop="name" content="A-Frame: Ready Player Me">
+  <meta name="twitter:title" content="A-Frame: Ready Player Me">
+  <meta property="og:title" content="A-Frame: Ready Player Me">
+  <meta property="og:site_name" content="A-Frame: Ready Player Me">
+  <meta name="description" content="This example illustrates how to integrate a Ready Player Me avatar into an 8th Wall WebAR project using A-Frame.">
+  <meta itemprop="description" content="This example illustrates how to integrate a Ready Player Me avatar into an 8th Wall WebAR project using A-Frame.">
+  <meta property="og:description" content="This example illustrates how to integrate a Ready Player Me avatar into an 8th Wall WebAR project using A-Frame.">
+  <meta name="twitter:description" content="This example illustrates how to integrate a Ready Player Me avatar into an 8th Wall WebAR project using A-Frame.">
+  <script crossorigin="anonymous" src="./external/scripts/8frame-1.2.0.min.js"></script>
+  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
+  <script crossorigin="anonymous" src="./external/scripts/8frame-1.3.0.min.js"></script>
+  <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
+  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <script crossorigin="anonymous" src="./external/scripts/coaching-overlay.js"></script>
+  <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam">
+  </script>
+
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
+
+<!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
+<meta name="8thwall:renderer" content="aframe:1.2.0"/>
+<meta name="8thwall:package" content="@8thwall.xrextras"/>
+<meta name="8thwall:package" content="@8thwall.landing-page"/>
+<meta name="8thwall:renderer" content="aframe:1.3.0"/>
+<meta name="8thwall:package" content="@8thwall.landing-page"/>
+<meta name="8thwall:package" content="@8thwall.xrextras"/> 
+<meta name="8thwall:package" content="@8thwall.coaching-overlay"/>
+ 
+<script crossorigin="anonymous" src="./external/scripts/aframe-extras-6.1.1.min.js"></script>
+<script src="./external/scripts/aframe-extras-6.1.1.min.js"></script>
+
+</head>
+
+<body>
+<script src="bundle.js"></script>
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<a-scene 
+  xrextras-loading
+  xrextras-runtime-error
+  landing-page
+  sky-coaching-overlay
+  sky-recenter
+  renderer="colorManagement: true"
+  xrlayers>
+  
+  <a-assets>
+    <img id="skyTexture" src='./assets/textures/space.png'>
+  </a-assets>
+
+  <a-camera position="0 3 0"></a-camera>
+    
+  <sky-scene invert-layer-mask="false">
+
+    <a-sky material="src: #skyTexture; transparent: true; opacity: 1;"></a-sky>
+    
+    <a-box 
+      position="0 10 -10"
+      scale="5 5 5"
+      material="
+        color: #AD50FF; shader: flat; 
+        src: https://cdn.8thwall.com/web/assets/cube-texture.png"
+      shadow>
+    </a-box>
+    
+    <a-entity light="type: ambient; intensity: 1;"></a-entity>
+  </sky-scene>
+
+<div id="rpmContainer" class="container" style="z-index:999; display: block">
+  <iframe id="iframe" class="iframe-content" src="https://8thwall.readyplayer.me/avatar" allow="camera *; microphone *" ></iframe>
+</div>
+
+<div id="overlay" style="z-index: 2">
+  <img id="recenterBtn" src="assets/icons/reset.svg">
+  <h3 id="instructions">DRAG TO MOVE</h3>
+</div>
+
+<div id="flipBg" class="absolute-fill"></div>
+<img id="swap-cam-btn" src="./assets/icons/camera-flip.svg">
+
+<!-- Add the recenter-on-load & swap-cam components to the scene so it has an effect -->
+<a-scene
+  responsive-immersive
+  swap-camera
+  landing-page
+  xrextras-gesture-detector
+  xrextras-loading
+  xrextras-runtime-error
+  renderer="colorManagement:true">
+
+  <a-assets>
+      <a-asset-item id="animated-m-glb" src="./assets/models/animated-m.glb"></a-asset-item>
+      <a-asset-item id="animated-f-glb" src="./assets/models/animated-f.glb"></a-asset-item>
+      <img id="background" src="./assets/background/gradient-purple.png">
+      <img id="tile" src="./assets/background/tile.jpg">
+  </a-assets>
+
+  <a-camera
+    id="camera"
+    position="0 4 4"
+    look-controls="enabled: false">
+       <a-plane 
+        id="faceEffectsBackground"
+        visible="false"
+        src="#background"
+        material="transparent: true"
+        position="0 0.1 -2" 
+        width="6" 
+        height="3" 
+       ></a-plane>
+  </a-camera>
+
+  <a-entity
+    id="light"
+    position="1 4.3 2.5"
+    shadow>
+  </a-entity>
+
+  <a-light type="ambient" intensity="0.8"></a-light>
+
+  <a-entity id="animated-f" gltf-model="#animated-f-glb"></a-entity>
+  <a-entity id="animated-m" gltf-model="#animated-m-glb"></a-entity>
+
+  <a-box
+    id="ground"
+    scale="1000 2 1000"
+    position="0 -1 0"
+    material="shader: shadow; transparent: true; opacity: 0.45"
+    shadow>
+  </a-box>
+  
+</a-scene>
+
+</body>
+
+</html>

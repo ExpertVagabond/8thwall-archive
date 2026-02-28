@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sky Exchange</title>
+  <meta itemprop="name" content="Sky Exchange">
+  <meta name="twitter:title" content="Sky Exchange">
+  <meta property="og:title" content="Sky Exchange">
+  <meta property="og:site_name" content="Sky Exchange">
+  <meta name="description" content="">
+  <meta itemprop="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+  <script crossorigin="anonymous" src="./external/scripts/8frame-1.3.0.min.js"></script>
+  <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
+  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <script crossorigin="anonymous" src="./external/scripts/coaching-overlay.js"></script>
+  <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam">
+  </script>
+
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
+
+<!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
+<meta name="8thwall:renderer" content="aframe:1.3.0"/>
+<meta name="8thwall:package" content="@8thwall.landing-page"/>
+<meta name="8thwall:package" content="@8thwall.xrextras"/> 
+<meta name="8thwall:package" content="@8thwall.coaching-overlay"/>
+ 
+<script crossorigin="anonymous" src="./external/scripts/aframe-extras-6.1.1.min.js"></script>
+
+</head>
+
+<body>
+<script src="bundle.js"></script>
+<!-- Copyright (c) 2023 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+
+<div id="bottomBar" style="display:none">
+  <button id="leftButton">
+    <img src="./assets/UI/triangle.svg">
+  </button>
+  <button id="rightButton">
+    <img src="./assets/UI/triangle.svg">
+  </button>
+</div>
+
+<a-scene 
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  sky-coaching-overlay
+  sky-recenter
+  renderer="colorManagement: true"
+  gltf-model="dracoDecoderPath: https://cdn.8thwall.com/web/aframe/draco-decoder/"
+  xrlayers="cameraDirection: back;">
+  
+  <a-assets>
+    <a-asset-item id="doty" src='./assets/models/doty.glb'></a-asset-item>
+    <a-asset-item id="airship" src='./assets/models/airship.glb'></a-asset-item>
+    <img id="skyTexture" src='./assets/textures/space.png'>
+
+    <!-- for remote authoring -->
+    <img id="groundTex" src='./assets/textures/ground.svg'>
+    <img id="foreground" src='./assets/textures/foreground.svg'>
+  </a-assets>
+
+  <a-camera wasd-controls-enabled="false" position="0 0 0"></a-camera>
+    
+  <sky-scene id="skyScene" invert-layer-mask="false" sky-debug>
+
+    <a-sky material="src: #skyTexture; transparent: true; opacity: 1; fog:false;"></a-sky>
+
+    <a-entity id="pivot" position="0 0 0" rotation="0 0 0">
+      <a-entity
+        gltf-model="#doty"
+        id="dotyModel"
+        position="4 0 -25"
+        rotation="0 0 0" 
+        scale="100 100 100"
+        animation-mixer="clip: idle; loop: repeat;"
+        sky-arrows>
+      </a-entity>
+    </a-entity>    
+    
+    <a-entity
+      gltf-model="#airship"
+      position="-20 20 -55"
+      rotation="0 -15 0" 
+      animation-mixer="clip: idle; loop: repeat;"
+      scale="10 10 10"
+    ></a-entity>
+     
+    <a-entity 
+      light="
+        type: directional; 
+        castShadow: true; 
+        color: white; 
+        intensity: 0.2" 
+      position="5 10 7"
+      rotation="45 0 45">
+    </a-entity>
+    
+    <a-entity light="type: ambient; intensity: 1;"></a-entity>
+  </sky-scene>
+
+</a-scene>
+
+</body>
+
+</html>

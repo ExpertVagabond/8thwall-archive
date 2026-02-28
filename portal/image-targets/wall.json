@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/wall_luminance.jpeg",
+  "resources": {
+    "croppedImage": "wall_cropped.jpeg",
+    "thumbnailImage": "wall_thumbnail.jpeg",
+    "luminanceImage": "wall_luminance.jpeg"
+  },
+  "name": "wall",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 51,
+    "width": 1500,
+    "height": 2000,
+    "isRotated": false,
+    "originalWidth": 1600,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1582838370591,
+  "updated": 1582918266342
+}
