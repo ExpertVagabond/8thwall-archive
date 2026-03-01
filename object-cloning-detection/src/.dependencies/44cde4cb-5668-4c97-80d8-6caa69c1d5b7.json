@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencyId": "e12d02c2-5038-4841-9c2d-7cdfe5ca5f48",
+  "moduleId": "4adde6bb-4400-4a14-ab91-4897b0bbed29",
+  "alias": "ui-kit",
+  "target": {
+    "type": "version",
+    "level": "major",
+    "major": 1,
+    "minor": 0,
+    "patch": 4
+  }
+}

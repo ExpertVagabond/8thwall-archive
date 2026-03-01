@@ -1,0 +1,704 @@
+{
+  "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+  "objects": {
+    "18747945-fc1e-4c6f-a5ea-3944ca825134": {
+      "collider": {
+        "eventOnly": true,
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 2,
+          "width": 1
+        },
+        "mass": 0
+      },
+      "components": {
+        "1201bc2b-630d-436e-bbf6-f0ef939c8613": {
+          "id": "1201bc2b-630d-436e-bbf6-f0ef939c8613",
+          "name": "scoreArea",
+          "parameters": {
+            "plate": {
+              "type": "entity",
+              "id": "739584f8-97c0-4264-9272-1b7129b869ce"
+            }
+          }
+        }
+      },
+      "geometry": {
+        "height": 0.4,
+        "radius": 0.6,
+        "type": "cylinder"
+      },
+      "id": "18747945-fc1e-4c6f-a5ea-3944ca825134",
+      "material": {
+        "color": "#FFFFFF",
+        "opacity": 0.2,
+        "type": "basic"
+      },
+      "name": "ScoreAreaLeft",
+      "order": 1.4566363979989139,
+      "position": [
+        -2,
+        -2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    "3192db9c-25f2-42a0-ba92-33069b9d5b20": {
+      "components": {},
+      "geometry": {
+        "height": 1,
+        "type": "plane",
+        "width": 1
+      },
+      "id": "3192db9c-25f2-42a0-ba92-33069b9d5b20",
+      "material": {
+        "blending": "normal",
+        "color": "#FFFFFF",
+        "depthTest": true,
+        "depthWrite": true,
+        "metalness": 0,
+        "normalScale": 1,
+        "opacity": 0.99,
+        "roughness": 1,
+        "textureSrc": {
+          "asset": "assets/mcdonalds.png",
+          "type": "asset"
+        },
+        "type": "basic"
+      },
+      "name": "left logo",
+      "parentId": "93bf1a1c-8806-4d86-9a07-efd84b5eca31",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5000000000000001,
+        0.5000000000000001,
+        0.5000000000000001
+      ]
+    },
+    "439180a6-1e39-4764-a3bc-f5f005c476d8": {
+      "components": {
+        "264bc39a-c922-4044-b817-320d828d51bf": {
+          "id": "264bc39a-c922-4044-b817-320d828d51bf",
+          "name": "gameManager",
+          "parameters": {}
+        }
+      },
+      "id": "439180a6-1e39-4764-a3bc-f5f005c476d8",
+      "name": "GameManager",
+      "order": 7,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7071067690849304,
+        0,
+        0,
+        0.7071067690849304
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
+      "components": {},
+      "geometry": null,
+      "id": "47699d9e-18a5-4f88-a4f9-b8be92e8f74a",
+      "light": {
+        "intensity": 0.8,
+        "type": "ambient"
+      },
+      "material": null,
+      "name": "Ambient Light",
+      "order": 9.456636397998913,
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "4ece42a1-820f-46f6-8788-7064341c0c0e": {
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/Plate.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "id": "4ece42a1-820f-46f6-8788-7064341c0c0e",
+      "name": "plate.glb",
+      "order": 0.8714307835168662,
+      "parentId": "18747945-fc1e-4c6f-a5ea-3944ca825134",
+      "position": [
+        0.014708549484679034,
+        -0.231,
+        0.06386453160750852
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "5d4e900f-fe5f-4eb6-87e8-a388843fb18a": {
+      "components": {
+        "3c21c792-44e3-4635-8d53-7e155ce6ee3c": {
+          "id": "3c21c792-44e3-4635-8d53-7e155ce6ee3c",
+          "name": "face-attachment",
+          "parameters": {
+            "point": "forehead"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "5d4e900f-fe5f-4eb6-87e8-a388843fb18a",
+      "material": null,
+      "name": "forehead",
+      "parentId": "cd6acdc2-16fb-4a65-a454-55d02f5d6557",
+      "position": [
+        -0.00020399999630171806,
+        0.2865149974822998,
+        0.60726398229599
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "800f276e-0655-4aa9-9178-96cc16dc654a": {
+      "components": {},
+      "geometry": {
+        "radius": 0.5,
+        "type": "circle"
+      },
+      "hidden": true,
+      "id": "800f276e-0655-4aa9-9178-96cc16dc654a",
+      "material": {
+        "color": "#7611b6",
+        "depthTest": false,
+        "depthWrite": false,
+        "metalness": 0,
+        "opacity": 0.5,
+        "roughness": 1,
+        "type": "basic"
+      },
+      "name": "right",
+      "parentId": "5d4e900f-fe5f-4eb6-87e8-a388843fb18a",
+      "position": [
+        0.45,
+        0.7000000000000002,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "920678d0-147e-419b-8ad9-c20a488dd7dc": {
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.1,
+          "height": 0.1,
+          "width": 0.1
+        },
+        "mass": 1
+      },
+      "components": {
+        "66216ea2-d8ab-490a-8545-3275ed118bfd": {
+          "id": "66216ea2-d8ab-490a-8545-3275ed118bfd",
+          "name": "Sushi",
+          "parameters": {
+            "speed": 0.009
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/sushi_roll.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "id": "920678d0-147e-419b-8ad9-c20a488dd7dc",
+      "name": "basicsushi",
+      "order": 19.78108843790626,
+      "position": [
+        -24.5,
+        -0.38560262450624294,
+        2.22e-16
+      ],
+      "rotation": [
+        0.5376882147304864,
+        0.4592291190026415,
+        0.4592291190026415,
+        0.5376882147304864
+      ],
+      "scale": [
+        15,
+        15,
+        15
+      ]
+    },
+    "922c6c29-1e8e-424b-8173-b6e2fd06e2bd": {
+      "collider": {
+        "eventOnly": true,
+        "geometry": {
+          "type": "box",
+          "depth": 1,
+          "height": 1,
+          "width": 1
+        }
+      },
+      "components": {
+        "002ddcca-f3fb-41c8-b72f-01e9f682ab79": {
+          "id": "002ddcca-f3fb-41c8-b72f-01e9f682ab79",
+          "name": "scoreArea",
+          "parameters": {
+            "plate": {
+              "type": "entity",
+              "id": "0106f8a8-9d47-4109-aa31-8ef01e7f5f4f"
+            }
+          }
+        }
+      },
+      "geometry": {
+        "height": 0.4,
+        "radius": 0.6,
+        "type": "cylinder"
+      },
+      "hidden": false,
+      "id": "922c6c29-1e8e-424b-8173-b6e2fd06e2bd",
+      "material": {
+        "color": "#FFFFFF",
+        "opacity": 0.2,
+        "type": "basic"
+      },
+      "name": "ScoreAreaRight",
+      "order": 2.456636397998914,
+      "position": [
+        2,
+        -2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    "93bf1a1c-8806-4d86-9a07-efd84b5eca31": {
+      "components": {},
+      "geometry": {
+        "radius": 0.5,
+        "type": "circle"
+      },
+      "hidden": true,
+      "id": "93bf1a1c-8806-4d86-9a07-efd84b5eca31",
+      "material": {
+        "color": "#7611b6",
+        "depthTest": false,
+        "depthWrite": false,
+        "metalness": 0,
+        "opacity": 0.5,
+        "roughness": 1,
+        "type": "basic"
+      },
+      "name": "left",
+      "parentId": "5d4e900f-fe5f-4eb6-87e8-a388843fb18a",
+      "position": [
+        -0.45,
+        0.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.6000000000000001,
+        0.6000000000000001,
+        0.6000000000000001
+      ]
+    },
+    "95be92c7-0581-41bf-a482-fdffea9cbe42": {
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/Plate.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "id": "95be92c7-0581-41bf-a482-fdffea9cbe42",
+      "name": "plate.glb (1)",
+      "parentId": "922c6c29-1e8e-424b-8173-b6e2fd06e2bd",
+      "position": [
+        0.014708549484679034,
+        -0.23109292178292695,
+        0.06386453160750852
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "9a871b9d-e9ce-4bda-82cd-e0f96da1b7e4": {
+      "components": {
+        "320d4898-3f32-42c7-a282-da7ac10c8fc2": {
+          "id": "320d4898-3f32-42c7-a282-da7ac10c8fc2",
+          "name": "objectSpawner",
+          "parameters": {
+            "audioComponent": {
+              "type": "entity",
+              "id": "03a6ddd5-9f22-4bf3-8718-975ae774abff"
+            },
+            "audioFast": {
+              "type": "entity",
+              "id": "03a6ddd5-9f22-4bf3-8718-975ae774abff"
+            },
+            "audioMid": {
+              "type": "entity",
+              "id": "1e1f133b-f2eb-4522-8fe4-91103ebd29e4"
+            },
+            "audioSlow": {
+              "type": "entity",
+              "id": "07d65242-a325-4297-93c4-695aeacad8c8"
+            },
+            "objectToSpawn": {
+              "type": "entity",
+              "id": "920678d0-147e-419b-8ad9-c20a488dd7dc"
+            },
+            "objectToSpawnEmpty": {
+              "type": "entity",
+              "id": "142b6c1a-c9fe-4c73-a6d5-9d4281ae4e73"
+            },
+            "objectToSpawnSuper": {
+              "type": "entity",
+              "id": "fecf6669-1ad9-4d60-9da3-a82480f4334b"
+            },
+            "spawnX": 2,
+            "spawnY": 8
+          }
+        }
+      },
+      "geometry": null,
+      "id": "9a871b9d-e9ce-4bda-82cd-e0f96da1b7e4",
+      "material": null,
+      "name": "SushiSpawner",
+      "order": 13.456636397998913,
+      "position": [
+        2,
+        6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "a608ddd9-9379-464d-966f-5d8d8674c83c": {
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "desktop": "AR",
+          "face": {
+            "meshGeometryIris": false,
+            "mirroredDisplay": true
+          },
+          "headset": "disabled",
+          "phone": "AR",
+          "xrCameraType": "face"
+        }
+      },
+      "components": {},
+      "disabled": false,
+      "geometry": null,
+      "id": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "material": null,
+      "name": "Camera",
+      "order": 10.456636397998913,
+      "position": [
+        0,
+        5.202330467552535,
+        6.820029855918676
+      ],
+      "rotation": [
+        -1.8412919444518387e-17,
+        0.9537169517857893,
+        -0.30070579621354565,
+        -5.839832572618051e-17
+      ],
+      "scale": [
+        0.9999998646558023,
+        0.9999999931513284,
+        0.9999998715044741
+      ]
+    },
+    "ac1989e3-3b71-49e2-a05f-e682aeb18c36": {
+      "components": {},
+      "disabled": false,
+      "geometry": null,
+      "id": "ac1989e3-3b71-49e2-a05f-e682aeb18c36",
+      "light": {
+        "intensity": 1,
+        "type": "directional"
+      },
+      "material": null,
+      "name": "Directional Light",
+      "order": 11.456636397998913,
+      "position": [
+        20,
+        20,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "cd6acdc2-16fb-4a65-a454-55d02f5d6557": {
+      "components": {
+        "1e648632-1386-42bf-9f30-5abfde0538c4": {
+          "id": "1e648632-1386-42bf-9f30-5abfde0538c4",
+          "name": "face-anchor",
+          "parameters": {}
+        }
+      },
+      "disabled": false,
+      "face": {
+        "addAttachmentState": false,
+        "id": 1
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "cd6acdc2-16fb-4a65-a454-55d02f5d6557",
+      "material": null,
+      "name": "Face",
+      "order": 12.456636397998913,
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "eec2e7b0-5b3f-45bf-9525-01e26b306a1d": {
+      "components": {},
+      "geometry": {
+        "height": 1,
+        "type": "plane",
+        "width": 1
+      },
+      "id": "eec2e7b0-5b3f-45bf-9525-01e26b306a1d",
+      "material": {
+        "blending": "normal",
+        "color": "#FFFFFF",
+        "depthTest": true,
+        "depthWrite": true,
+        "metalness": 0,
+        "normalScale": 1,
+        "opacity": 0.99,
+        "roughness": 1,
+        "textureSrc": {
+          "asset": "assets/cfa.png",
+          "type": "asset"
+        },
+        "type": "basic"
+      },
+      "name": "right logo",
+      "parentId": "800f276e-0655-4aa9-9178-96cc16dc654a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5000000000000002,
+        0.5000000000000002,
+        0.5000000000000002
+      ]
+    },
+    "fecf6669-1ad9-4d60-9da3-a82480f4334b": {
+      "collider": {
+        "geometry": {
+          "type": "box",
+          "depth": 0.5,
+          "height": 0.9,
+          "width": 1
+        },
+        "mass": 1
+      },
+      "components": {
+        "e7c680fe-2010-4e84-8c8d-86f716b055d7": {
+          "id": "e7c680fe-2010-4e84-8c8d-86f716b055d7",
+          "name": "Sushi",
+          "parameters": {
+            "type": "super"
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/sushi.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "id": "fecf6669-1ad9-4d60-9da3-a82480f4334b",
+      "name": "supersushi",
+      "order": 15.169917291575095,
+      "position": [
+        -24.540141721074384,
+        1.650171606456353,
+        2.220446049250313e-16
+      ],
+      "rotation": [
+        0.07845909572784494,
+        0,
+        0,
+        0.996917333733128
+      ],
+      "scale": [
+        1.5,
+        1.499999999999998,
+        1.4999999999999991
+      ]
+    },
+    "caca7aa6-d4a1-4e2d-bb6a-a536e4024af3": {
+      "id": "caca7aa6-d4a1-4e2d-bb6a-a536e4024af3",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "a0ca7850-39d9-4c8b-8a25-ed80ac1e22f6": {
+          "id": "a0ca7850-39d9-4c8b-8a25-ed80ac1e22f6",
+          "name": "UIRewardController",
+          "parameters": {}
+        }
+      },
+      "name": "UIRewardController"
+    }
+  },
+  "historyVersion": "mm5owkdh"
+}

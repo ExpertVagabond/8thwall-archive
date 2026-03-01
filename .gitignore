@@ -6,3 +6,4 @@ dist/
 deploy/
 */node_modules/
 */dist/
+*.zip
