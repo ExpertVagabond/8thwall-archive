@@ -1,48 +1,41 @@
-# 8th Wall WebAR Archive
+# 8thwall-archive
 
-Complete export of all 8th Wall WebAR projects by Purple Squirrel Media. Exported February 2026 before platform migration.
+**Complete archive of 11 WebAR projects built on 8th Wall before platform migration. SLAM, face tracking, image targets, VPS geofencing, and portal effects.**
 
-## Projects (11)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![A-Frame](https://img.shields.io/badge/A--Frame-EF2D5E?logo=aframe&logoColor=white)
+![WebAR](https://img.shields.io/badge/WebAR-purple)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-| Project | Type | Features | Migration |
-|---|---|---|---|
-| **a-frame-place-mesh** | A-Frame | SLAM, tap-to-place mesh | Easy |
-| **avatar-rigged-face-model** | A-Frame | Face tracking, expression mapping | Hard |
-| **buy-now** | A-Frame | SLAM, drag/rotate, CSS2D labels | Medium |
-| **holostream** | A-Frame | SLAM, Arcturus volumetric video | Hard |
-| **image-target-portal** | A-Frame | Image targets, portal, nav-mesh | Hard |
-| **portal** | A-Frame | Image targets, portal effect | Medium |
-| **proximity-trigger** | A-Frame | SLAM, joystick, cubemap reflections | Hard |
-| **readyplayerme** | A-Frame | Sky effects, face tracking, RPM avatars | Very Hard |
-| **sky-exchange** | A-Frame | Sky effects, LayersController | Hard |
-| **vps-scavenger-hunt** | A-Frame | VPS, Lightship Maps, GPS | Very Hard |
-| **world-effects** | Babylon.js | SLAM, Babylon.js integration | Hard |
+## Projects
 
-## Architecture
+| Project | AR Type | Description |
+|---------|---------|-------------|
+| `a-frame-place-mesh` | SLAM | Place 3D models on detected surfaces |
+| `avatar-rigged-face-model` | Face | Rigged avatar driven by face tracking |
+| `buy-now` | Image | AR commerce with product placement |
+| `access-pass-payments` | Image | Token-gated AR experience |
+| `external-api` | Various | API integration patterns |
 
-All projects (except world-effects) use:
-- **8frame** (8th Wall's A-Frame fork) v1.2.0 or v1.3.0
-- **Webpack 5** build system
-- **Bundled XR engine** in `external/xr/` (SLAM + face tracking TFLite models)
-- **XRExtras** helpers for gestures, loading, error handling
+## Tech Stack
 
-`world-effects` uses Babylon.js 5.23.0 instead of A-Frame.
+- **A-Frame** — Declarative WebVR/AR framework
+- **Babylon.js** — High-performance 3D engine (world effects)
+- **8th Wall SDK** — SLAM, face, image, VPS tracking
+- **Webpack 5** — Module bundling and dev server
+- **TFLite** — On-device ML models for face detection
 
 ## Migration Notes
 
-- **Easy**: `a-frame-place-mesh` — barely uses 8th Wall APIs, pure A-Frame/Three.js
-- **Medium**: `portal`, `buy-now` — swap image tracking to MindAR.js, replace gesture helpers
-- **Hard**: Face tracking → MediaPipe Face Mesh, Sky Effects → no open-source web equivalent, VPS → no web replacement
-- Common fix: Replace `cdn.8thwall.com` Draco decoder with `gstatic.com/draco/v1/decoders/`
-- Common fix: Replace 8frame with standard A-Frame 1.3.0+ from aframe.io
+These projects were built on the proprietary 8th Wall platform. For open-source alternatives, see:
+- [webar-core](https://github.com/ExpertVagabond/webar-core) — Drop-in replacement SDK
+- [MindAR](https://hiukim.github.io/mind-ar-js-doc/) — Image tracking
+- [MediaPipe](https://mediapipe.dev/) — Face tracking
 
-## Build
+## License
 
-Each project is independently buildable:
+[MIT](LICENSE)
 
-```bash
-cd <project-name>
-npm install
-npm start     # dev server
-npm run build # production bundle
-```
+## Author
+
+Built by [Purple Squirrel Media](https://purplesquirrelmedia.io)
